@@ -127,7 +127,7 @@ class WidgetListPage extends StatelessWidget {
                             break;
                           case 18:
                             Get.to(ScaleTransitionPage(),);
-                            break;
+                             break;
                           case 19:
                             Get.to(SizeTransitionPage(),);
                             break;
