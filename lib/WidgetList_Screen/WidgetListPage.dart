@@ -138,8 +138,21 @@ class WidgetListPage extends StatelessWidget {
                       },
                       child: Container(width: 80.w,height: 8.h,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(2.w),
-                          image: DecorationImage(image: AssetImage("assets/images/31.png"), fit: BoxFit.fill,),),
+                            color: Colors.white60,
+                            borderRadius: BorderRadius.circular(2.w),
+                            border: Border.all(color: Color(0xFF4CCD99),),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Color(0xFF4CCD99).withOpacity(0.1),
+                                spreadRadius: 3,
+                                blurRadius: 10,
+                              ),
+                            ]
+                        ),
+                        // decoration: BoxDecoration(
+                        //   borderRadius: BorderRadius.circular(2.w),
+                        //   image: DecorationImage(image: AssetImage("assets/images/31.png"), fit: BoxFit.fill,),
+                        // ),
                         child: Center(
                           child: Text(
                             listData[index], style: TextStyle(color: Theme.of(context).secondaryHeaderColor,fontWeight: FontWeight.w600),
