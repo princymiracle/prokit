@@ -9,7 +9,7 @@ import 'AnimatedItem/AnimatedSize.dart';
 import 'AnimatedItem/AnimatedWidget.dart';
 import 'AnimatedItem/AnimateddeFaultTextstyle.dart';
 import 'AspectRatioItem/AspectRatio.dart';
-import 'CardItem/CardListPage.dart';
+import 'CardItem/CardWidgetListPage.dart';
 import 'DataTable/DataTableWidget.dart';
 import 'DecoratedBoxTransition/DecoratedBoxTransitionPage.dart';
 import 'Dismissible/DismissibleListPage.dart';
@@ -96,7 +96,7 @@ class WidgetListPage extends StatelessWidget {
                             Get.to(AspectRatioPage(),);
                             break;
                           case 8:
-                            Get.to(CardListPage(),);
+                          //  Get.to(CardListPage(),);
                             break;
                           case 9:
                             Get.to(DecoratedBoxTransitionPage(),);

@@ -38,14 +38,17 @@ class _AnimatedWidgetPageState extends State<AnimatedWidgetPage> with SingleTick
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(centerTitle: true,
-        leading: IconButton(onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text(widget.title,style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () => Get.back(),
+          icon: Icon(Icons.arrow_back,size: 3.h,color: Colors.white),
+        ),
+        title: Text(widget.title,style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900,color: Colors.white),),
+        backgroundColor: Color(0xffC0B298),
+        centerTitle: true,
       ),
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/bgImage.png"),fit: BoxFit.cover)),
           child: Container(
             child: Padding(
               padding:  EdgeInsets.only(top: 2.h, left: 5.w,right: 5.w),
@@ -61,7 +64,7 @@ class _AnimatedWidgetPageState extends State<AnimatedWidgetPage> with SingleTick
                   Center(
                     child: AnimatedBuilder(
                       animation: animation,
-                      child: Container(color: Colors.red,width: 50.w,height: 25.h,),
+                      child: Container(color: Color(0xffC0B298),width: 50.w,height: 25.h,),
                       builder: (context, child) => Transform.rotate(
                         angle: animation.value,
                         child: child,

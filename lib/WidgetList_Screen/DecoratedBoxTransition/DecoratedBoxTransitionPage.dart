@@ -19,7 +19,7 @@ class _DecoratedBoxTransitionPageState extends State<DecoratedBoxTransitionPage>
       borderRadius: BorderRadius.circular(60.0),
       boxShadow: <BoxShadow>[
         BoxShadow(
-          color: Colors.black26,
+          color: Colors.black,
           spreadRadius: 3.0,
           offset: Offset(0, 6.0),
         ),
@@ -46,17 +46,20 @@ class _DecoratedBoxTransitionPageState extends State<DecoratedBoxTransitionPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(centerTitle: true,
-        leading: IconButton(onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text(widget.title,style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () => Get.back(),
+          icon: Icon(Icons.arrow_back,size: 5.h,color: Colors.white),
+        ),
+        title: Text(widget.title,style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900,color: Colors.white),),
+        backgroundColor: Color(0xff9888A5),
+        centerTitle: true,
       ),
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/bgImage.png"),fit: BoxFit.cover)),
           child: Container(
             child: Padding(
-              padding:  EdgeInsets.only(top: 2.h, left: 5.w,right: 5.w),
+              padding:  EdgeInsets.only(top: 4.h, left: 9.w,right: 9.w),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -72,8 +75,14 @@ class _DecoratedBoxTransitionPageState extends State<DecoratedBoxTransitionPage>
                       child: Container(
                         height: 30.h,
                         width: 60.w,
-                        padding: EdgeInsets.all(10),
-                        child: FlutterLogo(),
+                        padding: EdgeInsets.all(5.w),
+                        child: Center(
+                          child: Stack(
+                            children: [
+                              Image.asset("assets/images/MiracleLogo.png",fit: BoxFit.cover,),
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                   ),

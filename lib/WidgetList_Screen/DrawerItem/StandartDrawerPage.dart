@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 
 class StandartDrawerPage extends StatefulWidget {
@@ -45,9 +46,10 @@ class _StandartDrawerPageState extends State<StandartDrawerPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text(widget.title,style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900,color: Colors.white),),
+        backgroundColor: Color(0xff9888A5),
         centerTitle: true,
-        title: Text(widget.title,style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,),
+      ),
       body: Center(
         child: _widgetOptions[_selectedIndex],
       ),
@@ -57,9 +59,9 @@ class _StandartDrawerPageState extends State<StandartDrawerPage> {
           children: [
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Color(0xff9888A5),
               ),
-              child: Text('Drawer Header'),
+              child: Text('Drawer Header',style: TextStyle(color: Colors.white),),
             ),
             ListTile(
               title: const Text('Home'),trailing: Icon(Icons.arrow_forward),

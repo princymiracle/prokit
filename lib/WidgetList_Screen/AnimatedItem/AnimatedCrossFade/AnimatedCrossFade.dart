@@ -4,7 +4,7 @@ import 'package:sizer/sizer.dart';
 
 class AnimatedCrossFadePage extends StatefulWidget {
   String title;
-  AnimatedCrossFadePage({super.key,this.title = 'Animated Cross Fade 1 - Standart'});
+  AnimatedCrossFadePage({super.key,this.title = 'Animated Cross Fade 1'});
 
   @override
   State<AnimatedCrossFadePage> createState() => _AnimatedCrossFadePageState();
@@ -17,24 +17,24 @@ class _AnimatedCrossFadePageState extends State<AnimatedCrossFadePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
         leading: IconButton(
           onPressed: () => Get.back(),
-          icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text(widget.title,style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+          icon: Icon(Icons.arrow_back,size: 3.h,color: Colors.white,),
+        ),
+        title: Text(widget.title,style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900,color: Colors.white),),
+        backgroundColor: Color(0xff9888A5),
+        centerTitle: true,
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset("assets/images/bgImage.png",fit: BoxFit.cover,height: double.infinity,),
             Padding(
-              padding:  EdgeInsets.only(left: 5.w,right: 5.w),
+              padding:  EdgeInsets.only(top: 4.h,left: 10.w,right: 10.w),
               child: Container(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Animated Cross Fade 1 - Standart",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.bold),),
+                    Text("Animated Cross Fade 1 - Standart",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w500),),
                     SizedBox(height: 1.h,),
                     Text("This is the example of standart animated cress fade",style: TextStyle(color: Colors.grey),),
                     SizedBox(height: 1.h,),
@@ -46,13 +46,13 @@ class _AnimatedCrossFadePageState extends State<AnimatedCrossFadePage> {
                           firstChild: Container(
                             height: 6.h,
                             width: 38.w,
-                            color: Colors.blue,
+                            color: Colors.blue.withOpacity(0.3),
                             child: Center(child: Text("Sold")),
                           ),
                           secondChild: Container(
                             height: 7.h,
                             width: 39.w,
-                            color: Colors.pink,
+                            color: Colors.pink.withOpacity(0.3),
                             child: Center(child: Text("Buy")),
                           ),
                           crossFadeState: toggleAnimation
@@ -64,7 +64,7 @@ class _AnimatedCrossFadePageState extends State<AnimatedCrossFadePage> {
                     Center(
                       child: ElevatedButton(
                         style: ButtonStyle(
-                          backgroundColor: MaterialStatePropertyAll(Colors.amberAccent),
+                          backgroundColor: MaterialStatePropertyAll(Colors.redAccent.withOpacity(0.3)),
                         ),
                         onPressed: () {
                           setState(() {

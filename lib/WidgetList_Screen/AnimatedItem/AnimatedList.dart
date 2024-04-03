@@ -50,27 +50,32 @@ class _AnimatedListPageState extends State<AnimatedListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(centerTitle: true,
-        leading: IconButton(onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text(widget.title,style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () => Get.back(),
+          icon: Icon(Icons.arrow_back,size: 3.h,color: Colors.white),
+        ),
+        title: Text(widget.title,style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900,color: Colors.white),),
+        backgroundColor: Color(0xff9BBEC7),
+        centerTitle: true,
       ),
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/bgImage.png"),fit: BoxFit.cover)),
+         // decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/bgImage.png"),fit: BoxFit.cover)),
           child: Container(
             child: Padding(
-              padding:  EdgeInsets.only(top: 2.h, left: 5.w,right: 5.w),
+              padding:  EdgeInsets.only(top: 4.h,left: 7.w,right: 7.w),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Animated List",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.bold),),
+                  Text("Animated List",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w500),),
                   SizedBox(height: 1.h,),
                   Text("This is the example of Animated List",style: TextStyle(color: Colors.grey),),
                   SizedBox(height: 1.h,),
                   Text("Example :-"),
                   SizedBox(height: 3.h,),
                    FloatingActionButton(
+                     backgroundColor: Colors.red.withOpacity(0.5),
                     onPressed: _addItem,
                     child: const Icon(Icons.add),
                   ),
@@ -78,23 +83,23 @@ class _AnimatedListPageState extends State<AnimatedListPage> {
                       child: AnimatedList(
                         key: _key,
                         initialItemCount: 0,
-                        padding: EdgeInsets.all(5.w),
+                        padding: EdgeInsets.all(4.w),
                         itemBuilder: (context, index, animation) {
                           return SizeTransition(
                             key: UniqueKey(),
                             sizeFactor: animation,
                             child: Card(
-                              color: Colors.orangeAccent,
+                              color: Colors.orangeAccent.withOpacity(0.3),
                               child: ListTile(
                                 title: Text(
                                   _items[index],
-                                  style: TextStyle(fontSize: 12.sp),
+                                  style: TextStyle(fontSize: 12.sp,),
                                 ),
                                 trailing: IconButton(
                                     onPressed: () {
                                       _removeItem(index);
                                     },
-                                    icon: Icon(Icons.delete),
+                                    icon: Icon(Icons.delete,),
                                 ),
                               ),
                             ),

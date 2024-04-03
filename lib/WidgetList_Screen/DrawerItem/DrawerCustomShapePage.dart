@@ -1,5 +1,4 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
@@ -45,22 +44,23 @@ class _DrawerCustomShapePageState extends State<DrawerCustomShapePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text(widget.title,style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900,color: Colors.white),),
+        backgroundColor: Color(0xff9888A5),
         centerTitle: true,
-        title: Text(widget.title,style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,),
+      ),
       body: Center(
         child: _widgetOptions[_selectedIndex],
       ),
       drawer: Drawer(
-        shape: StadiumBorder(side: BorderSide(color: Colors.blueAccent, width: 1.w)),
+        shape: StadiumBorder(side: BorderSide(color: Color(0xff9BBEC7), width: 1.w)),
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Color(0xff9888A5),
               ),
-              child: Center(child: Text('Drawer Header')),
+              child: Center(child: Text('Drawer Header',style: TextStyle(color: Colors.white),)),
             ),
             ListTile(
               title: const Text('Home'),trailing: Icon(Icons.arrow_forward),

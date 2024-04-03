@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:sizer/sizer.dart';
 
 class DrawerRightPage extends StatefulWidget {
   String title;
@@ -44,9 +46,14 @@ class _DrawerRightPageState extends State<DrawerRightPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: () => Get.back(),
+          icon: Icon(Icons.arrow_back,size: 5.h,color: Colors.white),
+        ),
+        title: Text(widget.title,style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900,color: Colors.white),),
+        backgroundColor: Color(0xffC0B298),
         centerTitle: true,
-        title: Text(widget.title,style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,),
+      ),
       body: Center(
         child: _widgetOptions[_selectedIndex],
       ),
@@ -56,9 +63,9 @@ class _DrawerRightPageState extends State<DrawerRightPage> {
           children: [
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Color(0xffC0B298),
               ),
-              child: Text('Drawer Header'),
+              child: Text('Drawer Header',style: TextStyle(color: Colors.white),),
             ),
             ListTile(
               title: const Text('Home'),trailing: Icon(Icons.arrow_forward),

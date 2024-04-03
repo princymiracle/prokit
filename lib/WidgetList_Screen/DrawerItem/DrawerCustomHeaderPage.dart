@@ -24,9 +24,9 @@ class _DrawerCustomHeaderPageState extends State<DrawerCustomHeaderPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
-        title: Text(widget.title,style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+         title: Text(widget.title,style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900,color: Colors.white),),
+         backgroundColor: Color(0xff9BBEC7),
+         centerTitle: true,
       ),
       drawer: Drawer(
         child: Column(
@@ -34,7 +34,7 @@ class _DrawerCustomHeaderPageState extends State<DrawerCustomHeaderPage> {
             Container(
               width: double.infinity,
               padding: EdgeInsets.all(20),
-              color: Colors.blue,
+              color: Color(0xff9BBEC7),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -45,7 +45,7 @@ class _DrawerCustomHeaderPageState extends State<DrawerCustomHeaderPage> {
                     margin: EdgeInsets.only(top: 30),
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      image: DecorationImage(image: AssetImage("assets/images/bgImage.png"),
+                      image: DecorationImage(image: AssetImage("assets/images/Profile.png"),
                         fit: BoxFit.cover,
                       ),
                     ),

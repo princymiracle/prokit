@@ -4,7 +4,7 @@ import 'package:sizer/sizer.dart';
 
 class AnimatedCrossFadePage2 extends StatefulWidget {
   String title;
-  AnimatedCrossFadePage2({super.key,this.title = 'Animated Cross Fade2 Between Widget'});
+  AnimatedCrossFadePage2({super.key,this.title = 'Animated Cross Fade2 '});
 
   @override
   State<AnimatedCrossFadePage2> createState() => _AnimatedCrossFadePage2State();
@@ -17,24 +17,25 @@ class _AnimatedCrossFadePage2State extends State<AnimatedCrossFadePage2> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
         leading: IconButton(
           onPressed: () => Get.back(),
-          icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text(widget.title,style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+          icon: Icon(Icons.arrow_back,size: 3.h,color: Colors.white,),
+        ),
+        title: Text(widget.title,style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900,color: Colors.white),),
+        backgroundColor: Color(0xffC0B298),
+        centerTitle: true,
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset("assets/images/bgImage.png",fit: BoxFit.cover,height: double.infinity,),
+          //  Image.asset("assets/images/bgImage.png",fit: BoxFit.cover,height: double.infinity,),
             Padding(
-              padding:  EdgeInsets.only(left: 5.w,right: 5.w,top: 3.h),
+              padding:  EdgeInsets.only(top: 4.h,left: 10.w,right: 10.w),
               child: Container(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Animated Cross Fade2 Between Widget",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.bold),),
+                    Text("Animated Cross Fade2 Between Widget",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w500),),
                     SizedBox(height: 1.h,),
                     Text("This is the example of Between Widget animated cress fade",style: TextStyle(color: Colors.grey),),
                     SizedBox(height: 1.h,),
