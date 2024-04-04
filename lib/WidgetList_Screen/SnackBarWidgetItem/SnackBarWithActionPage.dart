@@ -16,17 +16,20 @@ class _SnackBarWithActionPageState extends State<SnackBarWithActionPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(centerTitle: true,
-        leading: IconButton(onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text(widget.title,style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () => Get.back(),
+          icon: Icon(Icons.arrow_back,size: 5.h,color: Colors.white),
+        ),
+        title: Text(widget.title,style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900,color: Colors.white),),
+        backgroundColor: Color(0xff9BBEC7),
+        centerTitle: true,
       ),
       body: SafeArea(
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(1.w),
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/bgImage.png"),fit: BoxFit.cover)),
           child: Container(
             child: Padding(
-              padding:  EdgeInsets.only(top: 2.h, left: 5.w,right: 5.w),
+              padding:  EdgeInsets.only(top: 4.h, left: 9.w,right: 9.w),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -38,14 +41,14 @@ class _SnackBarWithActionPageState extends State<SnackBarWithActionPage> {
                   SizedBox(height: 5.h,),
                   ElevatedButton(
                     onPressed: () {
-                      ScaffoldMessenger.of(context).hideCurrentSnackBar(); // Hide any previous snackbar
-                      ScaffoldMessenger.of(context).showSnackBar(SnackBar( // Show a new snackbar
+                      ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                         content: const Text('Snackbar With Action'),
                         action: SnackBarAction(
                           label: 'Undo',textColor: Colors.green,
                           onPressed: () {
-                            ScaffoldMessenger.of(context).hideCurrentSnackBar(); // Hide the current snackbar
-                            ScaffoldMessenger.of(context).showSnackBar(const SnackBar( // Show another snackbar
+                            ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                                 content: Text(
                                   'Undo',style: TextStyle(color: Colors.green),
                                 )));

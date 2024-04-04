@@ -7,6 +7,14 @@ import 'WidgetList_Screen/DataTable/DataTableWidget.dart';
 import 'WidgetList_Screen/DecoratedBoxTransition/DecoratedBoxTransitionPage.dart';
 import 'WidgetList_Screen/Dismissible/DismissibleListPage.dart';
 import 'WidgetList_Screen/DrawerItem/DrawerListPage.dart';
+import 'WidgetList_Screen/HeroWidget/HeroWidgetPage.dart';
+import 'WidgetList_Screen/ImageWidget/ImageWidgetPage.dart';
+import 'WidgetList_Screen/OpacityWidget/TextOpacityPage.dart';
+import 'WidgetList_Screen/RotationTransition/RotationTransitionPage.dart';
+import 'WidgetList_Screen/SafeAreaWidget/SafeAreaWidgetListPage.dart';
+import 'WidgetList_Screen/ScaleTransition/ScaleTransitionWidget.dart';
+import 'WidgetList_Screen/SizeTransition/SizeTransitionPage.dart';
+import 'WidgetList_Screen/SnackBarWidgetItem/SnackBarListPage.dart';
 import 'WidgetList_Screen/WidgetListPage.dart';
 
 void main() {
@@ -49,9 +57,17 @@ class MyApp extends StatelessWidget {
          // home: AnimationWidgetListPages(),
          // home: CardListPage(),
          // home: DataTablePage(),
-        //  home: DecoratedBoxTransitionPage(),
+         //  home: DecoratedBoxTransitionPage(),
          // home: DismissibleListPage(),
-          home: DrawerListPage(),
+         // home: DrawerListPage(),
+         // home: HeroWidgetPage(),
+         // home: ImageWidgetPage(),
+         // home: TextOpacityPage(),
+         // home: RotationTransitionPage(),
+         // home: ScaleTransitionPage(),
+         // home: SizeTransitionPage(),
+         // home: SafeAreaWidgetListPage(),
+          home: SnackBarListPage(),
 
           // getPages:Screens.routes,
           // initialRoute: Routes.widgetlistpage,
