@@ -127,5 +127,4 @@ class _AnimatedCrossFadePage2State extends State<AnimatedCrossFadePage2> {
       ),
     );
   }
-
 }

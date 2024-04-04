@@ -41,7 +41,6 @@ class _ElevationCardPageState extends State<ElevationCardPage> {
                   Text("* Card with elevation 0",style: TextStyle(fontWeight: FontWeight.bold),),
                   SizedBox(height: 1.h,),
                   Card(
-                   // color: Colors.orangeAccent,
                     child: Padding(
                       padding:  EdgeInsets.all(2.w),
                       child: Text("This text is inside card"),
@@ -53,7 +52,6 @@ class _ElevationCardPageState extends State<ElevationCardPage> {
                   Text("* Card with elevation 1",style: TextStyle(fontWeight: FontWeight.bold),),
                   SizedBox(height: 1.h,),
                   Card(
-                   // color: Colors.orange,
                     child: Padding(
                       padding:  EdgeInsets.all(2.w),
                       child: Text("This text is inside card"),
@@ -65,7 +63,6 @@ class _ElevationCardPageState extends State<ElevationCardPage> {
                   Text("* Card with elevation 5",style: TextStyle(fontWeight: FontWeight.bold),),
                   SizedBox(height: 1.h,),
                   Card(
-                   // color: Colors.amberAccent,
                     child: Padding(
                       padding:  EdgeInsets.all(2.w),
                       child: Text("This text is inside card"),
@@ -77,7 +74,6 @@ class _ElevationCardPageState extends State<ElevationCardPage> {
                   Text("* Card with elevation 20",style: TextStyle(fontWeight: FontWeight.bold),),
                   SizedBox(height: 1.h,),
                   Card(
-                   // color: Colors.amberAccent,
                     child: Padding(
                       padding:  EdgeInsets.all(2.w),
                       child: Text("This text is inside card"),

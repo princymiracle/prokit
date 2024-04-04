@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-
 class AnimatedListPage extends StatefulWidget {
   String title;
   AnimatedListPage({super.key,this.title = 'Animated List'});

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-
 class SnackBarWithActionPage extends StatefulWidget {
   String title;
   SnackBarWithActionPage({super.key,this.title = 'SnackBar With Action'});
@@ -58,18 +57,6 @@ class _SnackBarWithActionPageState extends State<SnackBarWithActionPage> {
                     },
                     child: const Text('Show Snackbar'),
                   ),
-                  // ElevatedButton(
-                  //   onPressed: () {
-                  //     setState(() {
-                  //       ScaffoldMessenger.of(context).showSnackBar(
-                  //         SnackBar(
-                  //           content: Text('Simple Snackbar'),
-                  //         ),
-                  //       );
-                  //     });
-                  //   },
-                  //   child: Text("Show Snackbar"),
-                  // ),
                 ],
               ),
             ),

@@ -96,7 +96,7 @@ class WidgetListPage extends StatelessWidget {
                             Get.to(AspectRatioPage(),);
                             break;
                           case 8:
-                          //  Get.to(CardListPage(),);
+                            Get.to(CardListPage(),);
                             break;
                           case 9:
                             Get.to(DecoratedBoxTransitionPage(),);
@@ -149,10 +149,6 @@ class WidgetListPage extends StatelessWidget {
                               ),
                             ]
                         ),
-                        // decoration: BoxDecoration(
-                        //   borderRadius: BorderRadius.circular(2.w),
-                        //   image: DecorationImage(image: AssetImage("assets/images/31.png"), fit: BoxFit.fill,),
-                        // ),
                         child: Center(
                           child: Text(
                             listData[index], style: TextStyle(color: Theme.of(context).secondaryHeaderColor,fontWeight: FontWeight.w600),
@@ -170,4 +166,3 @@ class WidgetListPage extends StatelessWidget {
     );
   }
 }
- //     56  62

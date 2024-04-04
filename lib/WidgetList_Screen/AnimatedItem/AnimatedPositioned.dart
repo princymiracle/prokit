@@ -24,7 +24,6 @@ class _AnimatedPositionedPageState extends State<AnimatedPositionedPage> {
         backgroundColor: Color(0xff9BBEC7),
         centerTitle: true,
       ),
-
       body: Container(
         child: Stack(
           children: [
@@ -59,7 +58,7 @@ class _AnimatedPositionedPageState extends State<AnimatedPositionedPage> {
                                 color: Colors.pink,
                               ),
                               child: Center(child: Text("Hello",style: TextStyle(color: Colors.white),)),
-                            ), )
+                            ), ),
                         ],
                       ),
                     )

@@ -74,4 +74,3 @@ class _BorderRadiusCardPageState extends State<BorderRadiusCardPage> {
     );
   }
 }
-//top left bottom right

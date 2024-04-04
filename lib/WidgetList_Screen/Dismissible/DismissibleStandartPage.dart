@@ -86,5 +86,3 @@ class _DismissibleStandartPageState extends State<DismissibleStandartPage>  {
     );
   }
 }
-// 1 = standart
-// 2 = properties

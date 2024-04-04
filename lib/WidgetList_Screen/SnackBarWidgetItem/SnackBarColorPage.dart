@@ -6,7 +6,6 @@ class SnackBarColorPage extends StatefulWidget {
   String title;
   SnackBarColorPage({super.key,this.title = 'SnackBar Color'});
 
-
   @override
   State<SnackBarColorPage> createState() => _SnackBarColorPageState();
 }
