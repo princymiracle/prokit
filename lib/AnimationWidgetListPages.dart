@@ -31,6 +31,8 @@ List<Widgetdata> widgetdata = [
 ];
 
 class _AnimationWidgetListPagesState extends State<AnimationWidgetListPages> {
+
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -39,7 +41,6 @@ class _AnimationWidgetListPagesState extends State<AnimationWidgetListPages> {
           leading: IconButton(
             onPressed: () => Get.back(),
             icon: Icon(Icons.arrow_back,size: 3.h,),
-
           ),
           title: Text("Animated Widgets",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900),),
           centerTitle: true,

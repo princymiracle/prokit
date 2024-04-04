@@ -67,7 +67,8 @@ class MyApp extends StatelessWidget {
          // home: ScaleTransitionPage(),
          // home: SizeTransitionPage(),
          // home: SafeAreaWidgetListPage(),
-          home: SnackBarListPage(),
+        //  home: SnackBarListPage(),
+          home: WidgetListPage(),
 
           // getPages:Screens.routes,
           // initialRoute: Routes.widgetlistpage,
