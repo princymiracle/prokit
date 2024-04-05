@@ -24,8 +24,6 @@ class _SpacingWarpPageState extends State<SpacingWarpPage> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
-
             Padding(padding: EdgeInsets.only(top: 6.w,left: 5.w,right: 5.w),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

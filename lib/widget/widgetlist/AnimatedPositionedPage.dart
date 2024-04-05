@@ -16,16 +16,18 @@ class _AnimatedPositionedPageState extends State<AnimatedPositionedPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:  AppBar(centerTitle: true,
+      appBar: AppBar(
         leading: IconButton(
-          onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Animated Positioned",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
-        backgroundColor: Theme.of(context).secondaryHeaderColor,
+          onPressed: () => Get.back(),
+          icon: Icon(Icons.arrow_back,size: 3.h,color: Colors.white),
+        ),
+        title: Text("Animated Positione",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900,color: Colors.white),),
+        backgroundColor: Color(0xff9BBEC7),
+        centerTitle: true,
       ),
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
             Padding(padding: EdgeInsets.only(top: 7.h,left: 5.w,right: 5.w),
               child: Column(
                 children: [

@@ -20,7 +20,7 @@ class _AnimatedPositionedPageState extends State<AnimatedPositionedPage> {
           onPressed: () => Get.back(),
           icon: Icon(Icons.arrow_back,size: 3.h,color: Colors.white),
         ),
-        title: Text("Animated Positioned",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900,color: Colors.white),),
+        title: Text("Animated Positione",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900,color: Colors.white),),
         backgroundColor: Color(0xff9BBEC7),
         centerTitle: true,
       ),
