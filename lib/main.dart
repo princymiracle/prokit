@@ -1,21 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import 'AnimationWidgetListPages.dart';
-import 'WidgetList_Screen/CardItem/CardWidgetListPage.dart';
-import 'WidgetList_Screen/DataTable/DataTableWidget.dart';
-import 'WidgetList_Screen/DecoratedBoxTransition/DecoratedBoxTransitionPage.dart';
-import 'WidgetList_Screen/Dismissible/DismissibleListPage.dart';
-import 'WidgetList_Screen/DrawerItem/DrawerListPage.dart';
-import 'WidgetList_Screen/HeroWidget/HeroWidgetPage.dart';
-import 'WidgetList_Screen/ImageWidget/ImageWidgetPage.dart';
-import 'WidgetList_Screen/OpacityWidget/TextOpacityPage.dart';
-import 'WidgetList_Screen/RotationTransition/RotationTransitionPage.dart';
-import 'WidgetList_Screen/SafeAreaWidget/SafeAreaWidgetListPage.dart';
-import 'WidgetList_Screen/ScaleTransition/ScaleTransitionWidget.dart';
-import 'WidgetList_Screen/SizeTransition/SizeTransitionPage.dart';
-import 'WidgetList_Screen/SnackBarWidgetItem/SnackBarListPage.dart';
-import 'WidgetList_Screen/WidgetListPage.dart';
+
+import 'widget/WidgetPage.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -24,19 +12,20 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return Sizer(
-      builder:(context, orientation, deviceType) {
-        return GetMaterialApp(
-          title: 'MiracleKit - Flutter UI Components',
+      builder: (context, orientation, deviceType) {
+        return  GetMaterialApp(
+          title: 'Flutter Demo',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             primaryColorDark:Colors.white,
-            primaryColor: Color(0xff007F73),
-            secondaryHeaderColor: Color(0xff007F73),
-            shadowColor : Color(0xff007F73),
-            primaryColorLight: Color(0xff007F73),
+            primaryColor: Color(0xff21A179),
+            secondaryHeaderColor: Color(0xff21A179),
+            shadowColor : Color(0xff21A179),
+            primaryColorLight: Color(0xff21A179),
             bottomAppBarColor: Colors.black,
             cardColor: Colors.grey,
             dividerColor: Colors.red,
@@ -52,26 +41,13 @@ class MyApp extends StatelessWidget {
             highlightColor: Color(0xff607B8B),
             hoverColor: Color(0xff6E6E6E),
             splashColor: Color(0xffBABABA),
-            colorScheme: ColorScheme.light(primary: Color(0xff007F73),),
+            colorScheme: ColorScheme.light(primary: Color(0x85E98929),),
+            textTheme:Theme.of(context).textTheme,
+            fontFamily: "PlusJakartaSans",
           ),
-         // home: AnimationWidgetListPages(),
-         // home: CardListPage(),
-         // home: DataTablePage(),
-         //  home: DecoratedBoxTransitionPage(),
-         // home: DismissibleListPage(),
-         // home: DrawerListPage(),
-         // home: HeroWidgetPage(),
-         // home: ImageWidgetPage(),
-         // home: TextOpacityPage(),
-         // home: RotationTransitionPage(),
-         // home: ScaleTransitionPage(),
-         // home: SizeTransitionPage(),
-         // home: SafeAreaWidgetListPage(),
-        //  home: SnackBarListPage(),
-          home: WidgetListPage(),
-
-          // getPages:Screens.routes,
-          // initialRoute: Routes.widgetlistpage,
+         home: WidgetPage(),
+      /*    getPages:Screens.routes,
+          initialRoute: Routes.widgetlist,*/
         );
       },
     );
