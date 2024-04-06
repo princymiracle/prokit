@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import 'AnimatedItem/AnimatedWidgetListPage.dart';
 import 'AspectRatio/AspectRatioPage.dart';
-import 'ButtonPage.dart';
+import 'Button/ButtonsPage.dart';
 import 'CardItem/CardWidgetListPage.dart';
 import 'ClipRReactWidget.dart';
 import 'DataTable/DataTableWidget.dart';
@@ -25,6 +25,7 @@ import 'ScaleTransition/ScaleTransitionWidget.dart';
 import 'SideTransitionPage/SideTransitionPage.dart';
 import 'SizeTransition/SizeTransitionPage.dart';
 import 'SnackBarWidgetItem/SnackBarListPage.dart';
+import 'TextField Gallery/TextFieldsPage.dart';
 import 'TranfromWidget/TransfromWidgetPage.dart';
 import 'widgetlist/AbsorbPointerPage.dart';
 import 'widgetlist/AlignWidgetPage.dart';
@@ -80,6 +81,9 @@ List<Widgetdata> widgetdata = [
   Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_animated.png", title: "Scale Transition", subtitle: "Animates the scale of a\ntransformed  widget",),
   Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_animated.png", title: "Size Transition", subtitle: "Animates its own size and clips\nand align its child",),
   Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_animated.png", title: "DecoratedBox Transition", subtitle: "Animates the rotation of a widget",),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_listview.png", title: "Text Field", subtitle: "Text fields allow users to type \ntext into an app",),
+
+
 ];
 
 class _WidgetPageState extends State<WidgetPage> {
@@ -95,10 +99,10 @@ class _WidgetPageState extends State<WidgetPage> {
           ),
           title: Text("Widgets",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
           actions: [
-          Padding(
-            padding:  EdgeInsets.only(right: 3.w),
-            child: Icon(Icons.settings),
-          ),
+            Padding(
+              padding:  EdgeInsets.only(right: 3.w),
+              child: Icon(Icons.settings),
+            ),
           ],
         ),
         body: Padding(
@@ -112,8 +116,8 @@ class _WidgetPageState extends State<WidgetPage> {
                 onTap: () {
                   switch(index){
                     case 0:
-                    Get.to(AppBarListPage());
-                    break;
+                      Get.to(AppBarListPage());
+                      break;
                     case 1:
                       Get.to(ContainerWidgetList());
                       break;
@@ -124,7 +128,7 @@ class _WidgetPageState extends State<WidgetPage> {
                       Get.to(ExpandedWidgetPage());
                       break;
                     case 4:
-                      Get.to(ButtonPage());
+                      Get.to(ButtonsPage());
                       break;
                     case 5:
                       Get.to(DividerWidgetList());
@@ -216,51 +220,55 @@ class _WidgetPageState extends State<WidgetPage> {
                     case 34:
                       Get.to(DecoratedBoxTransitionPage());
                       break;
+                    case 35:
+                      Get.to(TextFieldsListPage());
+                      break;
+
                   }
                 },
                 child: Row(
-                       children: [
-                               Container(
-                                   height: 10.h,
-                                   width: 18.w,
-                                   decoration: BoxDecoration(
-                                 borderRadius: BorderRadius.all(Radius.circular(6)),
-                                     color: widgetdata[index].color1,
-                                     image: DecorationImage(
-                                       image: AssetImage(widgetdata[index].img.toString()),scale: 0.8,
-                                     ),
-                                   ),
-                               ),
-                         SizedBox(width: 4.w,),
-                         Container(
-                           height: 11.h,
-                           width: 70.w,
-                           decoration: BoxDecoration(
-                             color: Colors.grey.withOpacity(0.1),
-                             borderRadius: BorderRadius.all(Radius.circular(10),),
-                           ),
-                           child: Padding(
-                             padding:  EdgeInsets.only(left: 2.w,right: 2.w,top: 1.h,),
-                             child: Row(
-                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                               children: [
-                                 Column(
-                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                   children: [
-                                     Text(widgetdata[index].title.toString(),style: TextStyle(fontSize: 12.sp),),
-                                     Text(widgetdata[index].subtitle.toString(),style: TextStyle(fontSize: 10.sp,color: Colors.black54),),
-                                   ],
-                                 ),
-                                 CircleAvatar(
-                                   radius: 15,
-                                   backgroundColor:  widgetdata[index].color1,
-                                   child: Icon(Icons.arrow_forward_ios,color: Colors.white,),
-                                 )
-                               ],
-                             ),
-                           ),
-                         ),
-                       ],
+                  children: [
+                    Container(
+                      height: 10.h,
+                      width: 18.w,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(6)),
+                        color: widgetdata[index].color1,
+                        image: DecorationImage(
+                          image: AssetImage(widgetdata[index].img.toString()),scale: 0.8,
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 4.w,),
+                    Container(
+                      height: 11.h,
+                      width: 70.w,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.withOpacity(0.1),
+                        borderRadius: BorderRadius.all(Radius.circular(10),),
+                      ),
+                      child: Padding(
+                        padding:  EdgeInsets.only(left: 2.w,right: 2.w,top: 1.h,),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(widgetdata[index].title.toString(),style: TextStyle(fontSize: 12.sp),),
+                                Text(widgetdata[index].subtitle.toString(),style: TextStyle(fontSize: 10.sp,color: Colors.black54),),
+                              ],
+                            ),
+                            CircleAvatar(
+                              radius: 15,
+                              backgroundColor:  widgetdata[index].color1,
+                              child: Icon(Icons.arrow_forward_ios,color: Colors.white,),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               );
             }, separatorBuilder: (BuildContext context, int index) { return SizedBox(height: 2.h,); },
@@ -279,175 +287,10 @@ class Widgetdata {
   String subtitle;
 
   Widgetdata({
-   required this.color1,
+    required this.color1,
     required this.img,
     required this.title,
     required this.subtitle,
   });
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-// Row(
-// children: [
-// Container(
-// height: 8.h,
-// width: 17.w,
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.all(Radius.circular(6)),
-// color: Color(0xff9888A5),
-// image: DecorationImage(
-// image: AssetImage("assets/icons/icon_a.png"),scale: 0.6,
-// ),
-// ),
-// ),
-// SizedBox(width: 5.w,),
-// Container(
-// height: 9.h,
-// width: 72.w,
-// decoration: BoxDecoration(
-// color: Colors.grey.withOpacity(0.1),
-// borderRadius: BorderRadius.all(Radius.circular(10),),
-// ),
-// child: Padding(
-// padding:  EdgeInsets.only(left: 2.w,right: 2.w,top: 1.h,),
-// child: Row(
-// mainAxisAlignment: MainAxisAlignment.spaceBetween,
-// children: [
-// Column(
-// crossAxisAlignment: CrossAxisAlignment.start,
-// children: [
-// Text("Absorb Pointer",style: TextStyle(fontSize: 12.sp),),
-// Text("A Widget that absorbs pointers \nduring hit testing ",style: TextStyle(fontSize: 10.sp,color: Colors.black54),),
-// ],
-// ),
-// CircleAvatar(
-// radius: 15,
-// backgroundColor:  Color(0xff9888A5),
-// child: Icon(Icons.arrow_forward_ios,color: Colors.white,),
-// )
-// ],
-// ),
-// ),
-// ),
-// ],
-// ),
-// SizedBox(height: 2.h),
-// Row(
-// children: [
-// Container(
-// height: 8.h,
-// width: 17.w,
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.all(Radius.circular(6)),
-// color: Color(0xffC0B298),
-// image: DecorationImage(
-// image: AssetImage("assets/icons/icon_align.png"),scale: 0.6,
-// ),
-//
-// ),
-// ),
-// SizedBox(width: 5.w,),
-// Container(
-// height: 9.h,
-// width: 72.w,
-// decoration: BoxDecoration(
-// color: Colors.grey.withOpacity(0.1),
-// borderRadius: BorderRadius.all(Radius.circular(10),),
-// ),
-// child: Padding(
-// padding:  EdgeInsets.only(left: 2.w,right: 2.w,top: 1.h,),
-// child: Row(
-// mainAxisAlignment: MainAxisAlignment.spaceBetween,
-// children: [
-// Column(
-// crossAxisAlignment: CrossAxisAlignment.start,
-// children: [
-// Text("Absorb Pointer",style: TextStyle(fontSize: 12.sp),),
-// Text("A Widget that absorbs pointers \nduring hit testing ",style: TextStyle(fontSize: 10.sp,color: Colors.black54),),
-// ],
-// ),
-// CircleAvatar(
-// radius: 15,
-// backgroundColor:  Color(0xffC0B298),
-// child: Icon(Icons.arrow_forward_ios,color: Colors.white,),
-// )
-// ],
-// ),
-// ),
-// ),
-// ],
-// ),
-// SizedBox(height: 2.h),
-// Row(
-// children: [
-// Container(
-// height: 8.h,
-// width: 17.w,
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.all(Radius.circular(6)),
-// color: Color(0xff9BBEC7
-//
-// ),
-// image: DecorationImage(
-// image: AssetImage("assets/icons/icon_animated.png"),scale: 0.6,
-// ),
-//
-// ),
-// ),
-// SizedBox(width: 5.w,),
-// Container(
-// height: 9.h,
-// width: 72.w,
-// decoration: BoxDecoration(
-// color: Colors.grey.withOpacity(0.1),
-// borderRadius: BorderRadius.all(Radius.circular(10),),
-// ),
-// child: Padding(
-// padding:  EdgeInsets.only(left: 2.w,right: 2.w,top: 1.h,),
-// child: Row(
-// mainAxisAlignment: MainAxisAlignment.spaceBetween,
-// children: [
-// Column(
-// crossAxisAlignment: CrossAxisAlignment.start,
-// children: [
-// Text("Absorb Pointer",style: TextStyle(fontSize: 12.sp),),
-// Text("A Widget that absorbs pointers \nduring hit testing ",style: TextStyle(fontSize: 10.sp,color: Colors.black54),),
-// ],
-// ),
-// CircleAvatar(
-// radius: 15,
-// backgroundColor:  Color(0xff9BBEC7),
-// child: Icon(Icons.arrow_forward_ios,color: Colors.white,),
-// )
-// ],
-// ),
-// ),
-// ),
-// ],
-// ),

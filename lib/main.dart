@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
+import 'widget/TextField Gallery/TextFieldsPage.dart';
 import 'widget/WidgetPage.dart';
 
 
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
             fontFamily: "PlusJakartaSans",
           ),
          home: WidgetPage(),
+        // home: TextFieldsListPage(),
       /*    getPages:Screens.routes,
           initialRoute: Routes.widgetlist,*/
         );
