@@ -13,6 +13,7 @@ import 'DrawerItem/DrawerListPage.dart';
 import 'ExpandedeWidget/ExpandedWidgetPage.dart';
 import 'FadeTransitionPage.dart';
 import 'GestureDetectorWidgetPage.dart';
+import 'GridView/GridViewPage.dart';
 import 'HeroWidget/HeroWidgetPage.dart';
 import 'IgnorePointerWidget.dart';
 import 'ImageWidget/ImageWidgetPage.dart';
@@ -82,6 +83,8 @@ List<Widgetdata> widgetdata = [
   Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_animated.png", title: "Size Transition", subtitle: "Animates its own size and clips\nand align its child",),
   Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_animated.png", title: "DecoratedBox Transition", subtitle: "Animates the rotation of a widget",),
   Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_listview.png", title: "Text Field", subtitle: "Text fields allow users to type \ntext into an app",),
+
+
 
 
 ];
@@ -223,7 +226,6 @@ class _WidgetPageState extends State<WidgetPage> {
                     case 35:
                       Get.to(TextFieldsListPage());
                       break;
-
                   }
                 },
                 child: Row(
