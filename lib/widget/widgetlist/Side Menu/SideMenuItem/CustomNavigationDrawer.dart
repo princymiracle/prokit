@@ -40,44 +40,6 @@ class _CustomNavigationDrawerPageState extends State<CustomNavigationDrawerPage>
 
   @override
   Widget build(BuildContext context) {
-    // return HiddenDrawer(
-    //  drawerWidth:  MediaQuery.of(context).size.width * .4,
-    //   drawer: HiddenDrawerMenu(
-    //     menu: [
-    //       DrawerMenu(child: Text("THE PADDOCK"), onPressed: (){}),
-    //       DrawerMenu(child: Text("THE PADDOCK"), onPressed: (){}),
-    //       DrawerMenu(child: Text("THE PADDOCK"), onPressed: (){}),
-    //       DrawerMenu(child: Text("THE PADDOCK"), onPressed: (){}),
-    //     ],
-    //   ),
-    //    child: Scaffold(
-    //         appBar:AppBar(
-    //           title: Text(widget.title,style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 14.sp,fontWeight: FontWeight.w600,),),
-    //           iconTheme: IconThemeData(color: Theme.of(context).primaryColorDark),
-    //           backgroundColor: Theme.of(context).secondaryHeaderColor,
-    //           leading: IconButton(onPressed: () {
-    //             if(Scaffold.of(context).isDrawerOpen){
-    //               Scaffold.of(context).openDrawer();
-    //             }
-    //            },icon: Icon(Icons.menu),),
-    //         ),
-    //          backgroundColor: Theme.of(context).splashColor,
-    //          body: SafeArea(
-    //            child: Container(
-    //              child: ListView.builder(
-    //                shrinkWrap: true,padding: EdgeInsets.only(left: 2.w,top: 2.w,right: 2.w),
-    //                itemCount: navigationList.length,
-    //                itemBuilder: (context, index) {
-    //                  return Navigation(
-    //                    context: context,img: navigationList[index].img,iconImg: navigationList[index].icon,title: navigationList[index].title,
-    //                    subtitle: navigationList[index].text,icon: Icons.favorite_border,likeNum: "84",conColor: navigationList[index].conColor,
-    //                  );
-    //                },),
-    //            ),
-    //          ),
-    //    ),
-    // );
-
     return Scaffold(
       body: Stack(
         children: [
