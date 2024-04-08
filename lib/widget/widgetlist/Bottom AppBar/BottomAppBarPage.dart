@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
 import 'BottomAppBarItem/SimpleBottomBar.dart';
+import 'BottomAppBarItem/TitledBottomBar.dart';
 
 
 

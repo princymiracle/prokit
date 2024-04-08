@@ -1,9 +1,10 @@
-import 'package:devkitflutteruikit/widget/widgetlist/BottomSheet/BottomSheet3.dart';
-import 'package:devkitflutteruikit/widget/widgetlist/BottomSheet/BottomSheetPage1.dart';
-import 'package:devkitflutteruikit/widget/widgetlist/BottomSheet/BottomSheetPage2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
+
+import 'BottomSheet3.dart';
+import 'BottomSheetPage1.dart';
+import 'BottomSheetPage2.dart';
 
 
 
