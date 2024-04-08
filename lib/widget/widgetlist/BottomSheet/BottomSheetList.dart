@@ -1,10 +1,9 @@
+import 'package:devkitflutteruikit/widget/widgetlist/BottomSheet/BottomSheet3.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/BottomSheet/BottomSheetPage1.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/BottomSheet/BottomSheetPage2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-
-import 'BottomSheet3.dart';
-import 'BottomSheetPage1.dart';
-import 'BottomSheetPage2.dart';
 
 
 
@@ -32,7 +31,7 @@ class _BottomSheetListPageState extends State<BottomSheetListPage> {
             onPressed: () => Get.back(),
             icon: Icon(Icons.arrow_back,size: 4.h,),
           ),
-          title: Text("Bottom Sheet",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
+          title: Text("App Bar",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
           actions: [
           ],
         ),
@@ -71,7 +70,7 @@ class _BottomSheetListPageState extends State<BottomSheetListPage> {
                     ),
                     SizedBox(width: 4.w,),
                     Container(
-                      height: 10.h,
+                      height: 9.5.h,
                       width: 70.w,
                       decoration: BoxDecoration(
                         color: Colors.grey.withOpacity(0.1),

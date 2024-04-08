@@ -1,9 +1,11 @@
+
+
+import 'package:devkitflutteruikit/widget/widgetlist/DividerWidget/DividerWidgetitem/VerticalDividerPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
 import 'DividerWidgetitem/HorizontalDividerPage.dart';
-import 'DividerWidgetitem/VerticalDividerPage.dart';
 
 
 

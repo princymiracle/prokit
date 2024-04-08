@@ -12,7 +12,7 @@ class AnimatedContainerPage2 extends StatefulWidget {
 
 class _AnimatedContainerPage2State extends State<AnimatedContainerPage2> {
 
-  var  _color = Colors.pink;
+  var  _color =  Color(0xffC0B298).withOpacity(0.7);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,6 +25,7 @@ class _AnimatedContainerPage2State extends State<AnimatedContainerPage2> {
       body: Container(
         child: Stack(
           children: [
+
             Padding(padding: EdgeInsets.only(top: 15.h,left: 4.w,right: 4.w,bottom: 5.h),
               child: Center(
                 child: Column(

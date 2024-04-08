@@ -1,14 +1,14 @@
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/BorderContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/BorderRadiusContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/ColoringContinerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/GradientColorContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/MarginOnContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/PaddingOnContainerPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/ContinerWidget/ContinerWidgetitem/ShadowContainerPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-import 'ContinerWidgetitem/BorderContainerPage.dart';
-import 'ContinerWidgetitem/BorderRadiusContainerPage.dart';
-import 'ContinerWidgetitem/ColoringContinerPage.dart';
-import 'ContinerWidgetitem/GradientColorContainerPage.dart';
-import 'ContinerWidgetitem/MarginOnContainerPage.dart';
-import 'ContinerWidgetitem/PaddingOnContainerPage.dart';
-import 'ContinerWidgetitem/ShadowContainerPage.dart';
 import 'ContinerWidgetitem/StandartContainerPage.dart';
 
 

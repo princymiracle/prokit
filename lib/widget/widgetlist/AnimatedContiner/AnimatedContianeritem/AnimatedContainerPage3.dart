@@ -16,10 +16,10 @@ class _AnimatedContainerPage3State extends State<AnimatedContainerPage3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar:  AppBar(centerTitle: true,
         leading: IconButton(
           onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
-        title: Text("Animated Container 3",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
+        title: Text("Animated Align",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w600),),
         backgroundColor: Color(0xff9BBEC7),
       ),
       body: Container(
@@ -58,7 +58,7 @@ class _AnimatedContainerPage3State extends State<AnimatedContainerPage3> {
                           child: Container(
                             height: 10.h,
                             width: 10.h,
-                            color: Colors.pink,
+                            color:Color(0xff9BBEC7).withOpacity(0.8),
                             child: Center(child: Text("Container",style: TextStyle(color: Colors.white),)),
                           ),
                         )

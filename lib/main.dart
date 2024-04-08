@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:prokit/widget/WidgetPage.dart';
 import 'package:sizer/sizer.dart';
-
-import 'widget/TextField Gallery/TextFieldsPage.dart';
-import 'widget/WidgetPage.dart';
 
 
 void main() {
@@ -47,7 +45,6 @@ class MyApp extends StatelessWidget {
             fontFamily: "PlusJakartaSans",
           ),
          home: WidgetPage(),
-        // home: GridViewListPage(),
       /*    getPages:Screens.routes,
           initialRoute: Routes.widgetlist,*/
         );

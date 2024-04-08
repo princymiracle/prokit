@@ -1,9 +1,8 @@
+import 'package:devkitflutteruikit/widget/widgetlist/FlexibleWidget/FlexibleWidgetitem/FlexibleColumnPage.dart';
+import 'package:devkitflutteruikit/widget/widgetlist/FlexibleWidget/FlexibleWidgetitem/FlexibleRowPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-
-import 'FlexibleWidgetitem/FlexibleColumnPage.dart';
-import 'FlexibleWidgetitem/FlexibleRowPage.dart';
 
 
 
