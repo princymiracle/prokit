@@ -77,7 +77,7 @@ class _DrawerListPageState extends State<DrawerListPage> {
                             ),
                             SizedBox(width: 5.w,),
                             Container(
-                              height: 11.h,
+                              height: 10.h,
                               width: 70.w,
                               decoration: BoxDecoration(
                                 color: Colors.grey.withOpacity(0.1),

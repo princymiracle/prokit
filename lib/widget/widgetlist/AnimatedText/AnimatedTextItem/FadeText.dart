@@ -23,7 +23,7 @@ class FadeTextPage extends StatelessWidget {
           child:  Center(child:
             Container(padding: EdgeInsets.all(5.w),
               width: 90.w, height: 20.h,
-              decoration: BoxDecoration(color: Color(0xffFFEBD4), borderRadius: BorderRadius.circular(2.w)),
+              decoration: BoxDecoration(color: Color(0xffC0B298), borderRadius: BorderRadius.circular(2.w)),
               child:Center(
                 child: DefaultTextStyle(
                   style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold,),

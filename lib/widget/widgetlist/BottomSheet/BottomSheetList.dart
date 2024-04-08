@@ -32,7 +32,7 @@ class _BottomSheetListPageState extends State<BottomSheetListPage> {
             onPressed: () => Get.back(),
             icon: Icon(Icons.arrow_back,size: 4.h,),
           ),
-          title: Text("App Bar",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
+          title: Text("Bottom Sheet",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
           actions: [
           ],
         ),
@@ -71,7 +71,7 @@ class _BottomSheetListPageState extends State<BottomSheetListPage> {
                     ),
                     SizedBox(width: 4.w,),
                     Container(
-                      height: 9.5.h,
+                      height: 11.h,
                       width: 70.w,
                       decoration: BoxDecoration(
                         color: Colors.grey.withOpacity(0.1),

@@ -21,7 +21,7 @@ class TyperTextPage extends StatelessWidget {
         child: Container(width: double.infinity,height: double.infinity,padding: EdgeInsets.all(2.w),
           child: Center(
             child: Container(width: 90.w, height: 20.h, padding: EdgeInsets.all(5.w),
-              decoration: BoxDecoration(color: const Color(0xffFFEBD4), borderRadius: BorderRadius.circular(2.w)),
+              decoration: BoxDecoration(color: Color(0xff9BBEC7), borderRadius: BorderRadius.circular(2.w)),
               child: DefaultTextStyle(
                 style: const TextStyle(fontSize: 35, fontFamily: 'Bobbers',),
                 child: AnimatedTextKit(repeatForever: true,isRepeatingAnimation: true,

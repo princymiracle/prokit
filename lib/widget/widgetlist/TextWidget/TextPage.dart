@@ -7,7 +7,7 @@ import 'package:sizer/sizer.dart';
 
 class TextPage extends StatelessWidget {
   String title;
-  TextPage({super.key,this.title = 'Text Gallery'});
+  TextPage({super.key,this.title = 'Text Widget'});
 
   @override
   Widget build(BuildContext context) {
@@ -69,92 +69,93 @@ class TextPage extends StatelessWidget {
         title: Text(title,style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
         backgroundColor: Color(0xffC0B298),
       ),
-
       body: SafeArea(
         child: Container(
           width: double.infinity,height: double.infinity,padding: EdgeInsets.all(2.w),
-          child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding:  EdgeInsets.only(top: 2.h),
-                child: Text(
-                  "String form Basic Text",style: TextStyle(color: Theme.of(context).bottomAppBarColor),
+          child: SingleChildScrollView(
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding:  EdgeInsets.only(top: 2.h),
+                  child: Text(
+                    "String form Basic Text",style: TextStyle(color: Theme.of(context).bottomAppBarColor),
+                  ),
                 ),
-              ),
-              SizedBox(height: 1.h,),
-              Divider(
-                height: 1,color: Theme.of(context).secondaryHeaderColor,
-              ),
-              SizedBox(height: 1.5.h,),
-              Text(
-                "--> Color Property",style: TextStyle(color: Theme.of(context).bottomAppBarColor,fontSize: 16),
-              ),
-              Row(
-                children: List.generate(colorList.length, (index) =>
-                  Container(padding: EdgeInsets.all(1.w), child: colorList[index])),
-              ),
-              Divider(
-                height: 1,color: Theme.of(context).secondaryHeaderColor,
-              ),
-              SizedBox(height: 1.5.h,),
-              Text(
-                "--> Size Property",style: TextStyle(color: Theme.of(context).bottomAppBarColor,fontSize: 16),
-              ),
-              Row(
-                children: List.generate(sizeList.length, (index) => Container(child: sizeList[index],)),
-              ),
-              Divider(
-                height: 1,color: Theme.of(context).secondaryHeaderColor,
-              ),
-              SizedBox(height: 1.5.h,),
-              Text(
-                "--> FontStyle",style: TextStyle(color: Theme.of(context).bottomAppBarColor,fontSize: 16),
-              ),
-              SizedBox(height: 1.h,),
-              Wrap(
-                children: List.generate(fontStyleList.length, (index) => Container(child: fontStyleList[index],)),
-              ),
-              SizedBox(height: 1.h,),
-              Divider(
-                height: 1,color: Theme.of(context).secondaryHeaderColor,
-              ),
-              SizedBox(height: 1.5.h,),
-              Text(
-                "--> Custom FontFamily",style: TextStyle(color: Theme.of(context).bottomAppBarColor,fontSize: 16),
-              ),
-              SizedBox(height: 1.h,),
-              Row(
-                children: List.generate(fontFamilyList.length, (index) =>
-                    Container(padding: EdgeInsets.all(1.w), child: fontFamilyList[index],)),
-              ),
-              SizedBox(height: 1.5.h,),
-              Divider(
-                height: 1,color: Theme.of(context).secondaryHeaderColor,
-              ),
-              SizedBox(height: 1.5.h,),
-              Text(
-                "--> Overflow Property",style: TextStyle(color: Theme.of(context).bottomAppBarColor,fontSize: 16),
-              ),
-              Padding(
-                padding: EdgeInsets.only(left: 1.h,top: 2.w,bottom: 2.h),
-                child: Text(text,overflow: TextOverflow.clip,style: TextStyle(color: Theme.of(context).canvasColor,fontSize: 12),),
-              ),
-              Divider(
-                height: 1,color: Theme.of(context).secondaryHeaderColor,
-              ),
-              SizedBox(height: 1.5.h,),
-              Text(
-                "--> TextSpan Property",style: TextStyle(color: Theme.of(context).bottomAppBarColor,fontSize: 16),
-              ),
-              SizedBox(height: 1.h,),
-              RichText(
-                text: const TextSpan(text: "Hello ",
-                  children: [
-                    TextSpan(text: "beautiful ",style: TextStyle(fontStyle: FontStyle.italic,fontSize: 18)),
-                    TextSpan(text: "world", style: TextStyle(fontWeight: FontWeight.bold)),],
-                  style: TextStyle(color: Colors.black,)),
-              ),
-            ],
+                SizedBox(height: 1.h,),
+                Divider(
+                  height: 1,color: Theme.of(context).secondaryHeaderColor,
+                ),
+                SizedBox(height: 1.5.h,),
+                Text(
+                  "--> Color Property",style: TextStyle(color: Theme.of(context).bottomAppBarColor,fontSize: 16),
+                ),
+                Row(
+                  children: List.generate(colorList.length, (index) =>
+                    Container(padding: EdgeInsets.all(1.w), child: colorList[index])),
+                ),
+                Divider(
+                  height: 1,color: Theme.of(context).secondaryHeaderColor,
+                ),
+                SizedBox(height: 1.5.h,),
+                Text(
+                  "--> Size Property",style: TextStyle(color: Theme.of(context).bottomAppBarColor,fontSize: 16),
+                ),
+                Row(
+                  children: List.generate(sizeList.length, (index) => Container(child: sizeList[index],)),
+                ),
+                Divider(
+                  height: 1,color: Theme.of(context).secondaryHeaderColor,
+                ),
+                SizedBox(height: 1.5.h,),
+                Text(
+                  "--> FontStyle",style: TextStyle(color: Theme.of(context).bottomAppBarColor,fontSize: 16),
+                ),
+                SizedBox(height: 1.h,),
+                Wrap(
+                  children: List.generate(fontStyleList.length, (index) => Container(child: fontStyleList[index],)),
+                ),
+                SizedBox(height: 1.h,),
+                Divider(
+                  height: 1,color: Theme.of(context).secondaryHeaderColor,
+                ),
+                SizedBox(height: 1.5.h,),
+                Text(
+                  "--> Custom FontFamily",style: TextStyle(color: Theme.of(context).bottomAppBarColor,fontSize: 16),
+                ),
+                SizedBox(height: 1.h,),
+                Row(
+                  children: List.generate(fontFamilyList.length, (index) =>
+                      Container(padding: EdgeInsets.all(1.w), child: fontFamilyList[index],)),
+                ),
+                SizedBox(height: 1.5.h,),
+                Divider(
+                  height: 1,color: Theme.of(context).secondaryHeaderColor,
+                ),
+                SizedBox(height: 1.5.h,),
+                Text(
+                  "--> Overflow Property",style: TextStyle(color: Theme.of(context).bottomAppBarColor,fontSize: 16),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 1.h,top: 2.w,bottom: 2.h),
+                  child: Text(text,overflow: TextOverflow.clip,style: TextStyle(color: Theme.of(context).canvasColor,fontSize: 12),),
+                ),
+                Divider(
+                  height: 1,color: Theme.of(context).secondaryHeaderColor,
+                ),
+                SizedBox(height: 1.5.h,),
+                Text(
+                  "--> TextSpan Property",style: TextStyle(color: Theme.of(context).bottomAppBarColor,fontSize: 16),
+                ),
+                SizedBox(height: 1.h,),
+                RichText(
+                  text: const TextSpan(text: "Hello ",
+                    children: [
+                      TextSpan(text: "beautiful ",style: TextStyle(fontStyle: FontStyle.italic,fontSize: 18)),
+                      TextSpan(text: "world", style: TextStyle(fontWeight: FontWeight.bold)),],
+                    style: TextStyle(color: Colors.black,)),
+                ),
+              ],
+            ),
           ),
         ),
       ),

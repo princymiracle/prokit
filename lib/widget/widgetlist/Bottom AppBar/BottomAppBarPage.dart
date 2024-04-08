@@ -32,7 +32,7 @@ class _BottomAppBarPageState extends State<BottomAppBarPage> {
             icon: Icon(Icons.arrow_back,size: 4.h,),
 
           ),
-          title: Text("App Bar",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
+          title: Text("Bottom App Bar",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
           actions: [
           ],
         ),

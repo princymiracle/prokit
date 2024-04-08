@@ -40,9 +40,9 @@ class _DataTablePageState extends State<DataTablePage> with TickerProviderStateM
                   SizedBox(height: 5.h,),
                   DataTable(
                     columns: <DataColumn>[
-                      DataColumn(label: Text("Name",style: TextStyle(color: Colors.pinkAccent,fontWeight: FontWeight.bold),),tooltip: 'Name'),
-                      DataColumn(label: Text("Phone",style: TextStyle(color: Colors.pinkAccent,fontWeight: FontWeight.bold),),tooltip: 'Phone'),
-                      DataColumn(label: Text("Address",style: TextStyle(color: Colors.pinkAccent,fontWeight: FontWeight.bold),),tooltip: 'Address'),
+                      DataColumn(label: Text("Name",style: TextStyle(color:  Color(0xff9888A5),fontWeight: FontWeight.bold),),tooltip: 'Name'),
+                      DataColumn(label: Text("Phone",style: TextStyle(color:  Color(0xff9888A5),fontWeight: FontWeight.bold),),tooltip: 'Phone'),
+                      DataColumn(label: Text("Address",style: TextStyle(color:  Color(0xff9888A5),fontWeight: FontWeight.bold),),tooltip: 'Address'),
                     ],
                     rows: <DataRow>[
                       DataRow(

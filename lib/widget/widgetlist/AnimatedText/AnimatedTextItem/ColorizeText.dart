@@ -27,7 +27,7 @@ class ColorizeTextPage extends StatelessWidget {
             child: Container(
               padding: EdgeInsets.all(5.w),
               width: 90.w,height: 20.h,
-              decoration: BoxDecoration(color: Color(0xffFFEBD4), borderRadius: BorderRadius.circular(2.w)),
+              decoration: BoxDecoration(color: Color(0xff9BBEC7), borderRadius: BorderRadius.circular(2.w)),
               child: Center(
                 child: AnimatedTextKit(repeatForever: true,isRepeatingAnimation: true,
                   animatedTexts: [

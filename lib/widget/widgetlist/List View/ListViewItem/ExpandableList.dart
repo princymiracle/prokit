@@ -14,7 +14,7 @@ class _ExpandableListState extends State<ExpandableList> {
 
   List<SubData> sublist  = [
     SubData(title: "Map", img: "assets/icons/icons_map.png"),
-    SubData(title: "Album", img:"assets/icons/icons_album.png"),
+    SubData(title: "Album", img:"assets/icons/icon_album.png"),
     SubData(title: "Phone", img:"assets/icons/icons_phone.png"),
     SubData(title: "DeskTop MAC", img: "assets/icons/icons_desktop.png"),
   ];
@@ -77,7 +77,7 @@ class _ExpandableListState extends State<ExpandableList> {
               child: Image.asset(image,fit: BoxFit.cover,width: double.infinity,height: 25.h,)),
           Padding(padding: EdgeInsets.only(left: 2.w,right: 2.w),
             child: ExpansionTile(tilePadding: EdgeInsets.zero,shape: const Border(),
-              title: Text(title,style: TextStyle(color: Theme.of(context).shadowColor,fontSize: 38),),
+              title: Text(title,style: TextStyle(color: Color(0xff9BBEC7),fontSize: 38),),
               trailing:lakeStatus
                   ? Padding(padding:  EdgeInsets.only(bottom: 12.w),
                    child: Icon(icon,size: 6.w,color: Theme.of(context).cardColor,),)
@@ -86,7 +86,7 @@ class _ExpandableListState extends State<ExpandableList> {
               onExpansionChanged: (value) {
               lakeStatus = value; setState(() {});
               },
-              children: [Text(subText,style: TextStyle(color: Theme.of(context).shadowColor,fontSize: 10,),maxLines: 11,),],
+              children: [Text(subText,style: TextStyle(color: Color(0xff9BBEC7),fontSize: 10,),maxLines: 11,),],
             ),
           )
         ],
@@ -103,14 +103,14 @@ class _ExpandableListState extends State<ExpandableList> {
       child:Column(crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(padding: EdgeInsets.only(left: 3.w),
-            child: Text(title,style: TextStyle(color: Theme.of(context).shadowColor,fontSize: 40),),
+            child: Text(title,style: TextStyle(color: Color(0xff9BBEC7),fontSize: 40),),
           ),
           status ? Padding(padding: EdgeInsets.only(bottom: 2.w,left: 2.w),
-            child: Text(status ? "Vembanad Lake" : "",style: TextStyle(color: Theme.of(context).primaryColor),),)
+            child: Text(status ? "Vembanad Lake" : "",style: TextStyle(color: Color(0xff9BBEC7)),),)
               : Container(),
           Image.asset(status ? "assets/images/img_lake3.png" : "assets/images/img_lake2.png" ,fit: BoxFit.fill,height: status ? 22.h : 18.h,width: double.infinity,),
           status ? Padding(padding: EdgeInsets.only(top: 2.w,left: 2.w),
-            child: Text(status ? "Different views of Vembanad Lake" : "",style: TextStyle(color: Theme.of(context).secondaryHeaderColor),),)
+            child: Text(status ? "Different views of Vembanad Lake" : "",style: TextStyle(color: Color(0xff9BBEC7)),),)
               : Container(),
           Padding(padding: EdgeInsets.only(left: 2.w),
             child: TextButton(
@@ -132,7 +132,7 @@ class _ExpandableListState extends State<ExpandableList> {
         boxShadow: [BoxShadow(color: Theme.of(context).shadowColor,blurRadius: 1.0,blurStyle: BlurStyle.outer)],
       ),
       child: ExpansionTile(shape: const Border(),
-        title: Text(title,style: TextStyle(color: Theme.of(context).shadowColor),),
+        title: Text(title,style: TextStyle(color: Color(0xff9BBEC7)),),
         trailing: subStatus
             ? Icon(icon,size: 6.w,color: Theme.of(context).shadowColor,)
             : Icon(icon1,size: 6.w,color: Theme.of(context).cardColor,),
@@ -142,7 +142,7 @@ class _ExpandableListState extends State<ExpandableList> {
         children: List.generate(data.length, (index) =>
             ListTile(
               title: Text(data[index].title),
-              leading: Image.asset(data[index].img,fit: BoxFit.cover,height: 4.w,),
+              leading: Image.asset(data[index].img,fit: BoxFit.cover,height: 4.w,color: Color(0xff9BBEC7),),
             ),
         ),
       ),

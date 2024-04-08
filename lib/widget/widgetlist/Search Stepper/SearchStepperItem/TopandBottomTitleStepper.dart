@@ -35,7 +35,7 @@ class _TopandBottomTitleStepperState extends State<TopandBottomTitleStepper> {
                 child: Container(
                   height:22.w, width: 100.w,
                   padding: EdgeInsets.only(top: 3.w),
-                  decoration: BoxDecoration(color: Color(0xffFFEBD4),borderRadius: BorderRadius.circular(5.w),),
+                  decoration: BoxDecoration(color: Color(0xff9888A5),borderRadius: BorderRadius.circular(5.w),),
                   child: Center(
                     child: EasyStepper(
                       stepAnimationCurve: Curves.bounceInOut,direction: Axis.horizontal,

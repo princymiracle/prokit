@@ -23,7 +23,7 @@ class RotateTextPage extends StatelessWidget {
           child: Center(child:
           Container(padding: EdgeInsets.all(2.w),
             width: 90.w, height: 25.h,
-            decoration: BoxDecoration(color: const Color(0xffFFEBD4), borderRadius: BorderRadius.circular(2.w)),
+            decoration: BoxDecoration(color: Color(0xff9888A5), borderRadius: BorderRadius.circular(2.w)),
             child: Row(mainAxisSize: MainAxisSize.min,mainAxisAlignment: MainAxisAlignment.start,
               children:[
                 Text('Be', style: TextStyle(fontSize: 40,color:Theme.of(context).errorColor),),

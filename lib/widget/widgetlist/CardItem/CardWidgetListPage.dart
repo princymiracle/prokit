@@ -31,7 +31,7 @@ class _CardListPageState extends State<CardListPage> {
             onPressed: () => Get.back(),
             icon: Icon(Icons.arrow_back,size: 5.h,),
           ),
-          title: Text("Animated Widgets",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900),),
+          title: Text("Card Widgets",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900),),
           centerTitle: true,
         ),
         body: Padding(
@@ -77,7 +77,7 @@ class _CardListPageState extends State<CardListPage> {
                             ),
                             SizedBox(width: 5.w,),
                             Container(
-                              height: 11.h,
+                              height: 10.h,
                               width: 70.w,
                               decoration: BoxDecoration(
                                 color: Colors.grey.withOpacity(0.1),

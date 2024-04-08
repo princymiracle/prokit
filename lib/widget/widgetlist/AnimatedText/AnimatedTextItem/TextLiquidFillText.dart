@@ -23,7 +23,7 @@ class TextLiquidFillTextPage extends StatelessWidget {
             child:Container(
               child: TextLiquidFill(text: 'LIQUIDY',boxHeight: 75.w,
                 waveColor: Theme.of(context).hoverColor,boxWidth: double.infinity,
-                boxBackgroundColor: const Color(0xffFFEBD4),
+                boxBackgroundColor: Color(0xff9888A5),
                 textStyle: const TextStyle(fontSize: 80, fontWeight: FontWeight.bold,),),
             ),
           ),

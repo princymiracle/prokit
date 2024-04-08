@@ -23,7 +23,7 @@ class TyperwriterTextPage extends StatelessWidget {
           child:  Center(
             child: Container(
               padding: EdgeInsets.all(5.w), width: 90.w, height: 25.h,
-              decoration: BoxDecoration(color: const Color(0xffFFEBD4), borderRadius: BorderRadius.circular(2.w)),
+              decoration: BoxDecoration(color: Color(0xff9888A5), borderRadius: BorderRadius.circular(2.w)),
               child: DefaultTextStyle(
                 style: const TextStyle(fontSize:35, fontFamily: 'Agne',),
                 child: AnimatedTextKit(repeatForever: true,isRepeatingAnimation: true,

@@ -41,7 +41,7 @@ class SimpleList extends StatelessWidget {
               shrinkWrap: true ,itemCount:listviewData.length,
               itemBuilder: (context, index) {
                 return ListTile(
-                  leading: Image.asset(listviewData[index].img,fit: BoxFit.cover,height: 5.w,),
+                  leading: Image.asset(listviewData[index].img,fit: BoxFit.cover,height: 5.w,color: Color(0xff9888A5),),
                   title:Text( listviewData[index].title),
                 );
               },),

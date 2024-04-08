@@ -60,7 +60,7 @@ class _CollapsibleNavigationDrawerPageState extends State<CollapsibleNavigationD
                     dividerTheme: const SideNavigationBarDividerTheme(
                       showHeaderDivider: true, showMainDivider: false, showFooterDivider: false, headerDividerColor: Color(0xffBABABA),
                     ),
-                    backgroundColor: const Color(0xffF59526),
+                    backgroundColor:Color(0xff9BBEC7),
                 ),
              ),
            ],

@@ -24,7 +24,6 @@ class _InteractiveViewerPageState extends State<InteractiveViewerPage> {
       body: Container(
         child: Stack(
           children: [
-            Image.asset('assets/images/img_bgImage.png',fit: BoxFit.cover,height: double.infinity,),
         Padding(padding: EdgeInsets.only(top: 4.w,left: 5.w,right: 5.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

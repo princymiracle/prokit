@@ -94,10 +94,10 @@ class _CustomNavigationDrawerPageState extends State<CustomNavigationDrawerPage>
       transform: Matrix4.translationValues(xOffset, yOffset, 0)..scale(scaleFactor),
       duration: Duration(milliseconds: 250),color: Theme.of(context).primaryColorDark,
       child: Scaffold(
-        backgroundColor: Theme.of(context).bottomAppBarColor,
-        appBar: AppBar(centerTitle: true,
-          leading:isDrawerOpen
-              ? IconButton(
+          backgroundColor: Color(0xffC0B298),
+          appBar: AppBar(centerTitle: true,
+            leading:isDrawerOpen
+                ? IconButton(
                 onPressed: () {
                   setState(() {
                     xOffset = 0;
@@ -107,7 +107,7 @@ class _CustomNavigationDrawerPageState extends State<CustomNavigationDrawerPage>
                   });
                 },
                 icon: Icon(Icons.menu,color: Theme.of(context).primaryColorDark,))
-              : IconButton(
+                : IconButton(
                 onPressed: () {
                   setState(() {
                     xOffset = 230;
@@ -117,77 +117,77 @@ class _CustomNavigationDrawerPageState extends State<CustomNavigationDrawerPage>
                   });
                 },
                 icon: Icon(Icons.menu,color: Theme.of(context).primaryColorDark,)),
-          backgroundColor: Theme.of(context).secondaryHeaderColor,
-          title: Text(selectIndex == 0
-              ? widget.title : selectIndex == 1
-              ? 'OTHER SCREEN' : selectIndex == 2
-              ? 'OTHER SCREEN' : 'OTHER SCREEN'
-            ,style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 14.sp,fontWeight: FontWeight.w600,),),
-        ),
-       body:selectIndex == 0 ? SafeArea(
-         child: Container(
-           child: ListView.builder(
-             shrinkWrap: true,padding: EdgeInsets.only(left: 2.w,top: 2.w,right: 2.w),
-             itemCount: navigationList.length,
-             itemBuilder: (context, index) {
-               return Navigation(
-                 context: context,img: navigationList[index].img,iconImg: navigationList[index].icon,title: navigationList[index].title,
-                 subtitle: navigationList[index].text,icon: Icons.favorite_border,likeNum: "84",conColor: navigationList[index].conColor,
-                 );
-               },),
-             ),
-           )
-           : selectIndex == 1 ? SafeArea(
-         child: Center(
-           child: Container(height:70.w,color: Theme.of(context).primaryColorDark,
-             child: Column(mainAxisAlignment: MainAxisAlignment.center,
-               children: [
-                 Image.asset('assets/images/img_menuImg1.png',fit: BoxFit.cover,colorBlendMode: BlendMode.darken,height: 60.w,width: double.infinity),
-                 Container(height: 10.w,
-                   child: Center(child: Text('This is another screen!',style: TextStyle(color: Theme.of(context).bottomAppBarColor),)),),
-               ],
-             ),
-           ),
-         ),
-       )  : selectIndex == 2 ? SafeArea(
-         child: Center(
-           child: Container(height:70.w,color: Theme.of(context).primaryColorDark,
-             child: Column(mainAxisAlignment: MainAxisAlignment.center,
-               children: [
-                 Image.asset('assets/images/img_menuImg1.png',fit: BoxFit.cover,colorBlendMode: BlendMode.darken,height: 60.w,width: double.infinity),
-                 Container(height: 10.w,
-                   child: Center(child: Text('This is another screen!',style: TextStyle(color: Theme.of(context).bottomAppBarColor),)),),
-               ],
-             ),
-           ),
-         ),
-       )
-           : selectIndex  == 3 ? SafeArea(
-         child: Center(
-           child: Container(height:70.w,color: Theme.of(context).primaryColorDark,
-             child: Column(mainAxisAlignment: MainAxisAlignment.center,
-               children: [
-                 Image.asset('assets/images/img_menuImg1.png',fit: BoxFit.cover,colorBlendMode: BlendMode.darken,height: 60.w,width: double.infinity),
-                 Container(height: 10.w,
-                   child: Center(child: Text('This is another screen!',style: TextStyle(color: Theme.of(context).bottomAppBarColor),)),),
-               ],
-             ),
-           ),
-         ),
-       )
-           : SafeArea(
-               child: Container(
-                 child: ListView.builder(
-                   shrinkWrap: true,padding: EdgeInsets.only(left: 2.w,top: 2.w,right: 2.w),
-                   itemCount: navigationList.length,
-                   itemBuilder: (context, index) {
-                     return Navigation(
-                       context: context,img: navigationList[index].img,iconImg: navigationList[index].icon,title: navigationList[index].title,
-                       subtitle: navigationList[index].text,icon: Icons.favorite_border,likeNum: "84",conColor: navigationList[index].conColor,
-                     );
-                   },),
-               ),
-            )
+            backgroundColor: Color(0xffC0B298),
+            title: Text(selectIndex == 0
+                ? widget.title : selectIndex == 1
+                ? 'OTHER SCREEN' : selectIndex == 2
+                ? 'OTHER SCREEN' : 'OTHER SCREEN'
+              ,style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 14.sp,fontWeight: FontWeight.w600,),),
+          ),
+          body:selectIndex == 0 ? SafeArea(
+            child: Container(
+              child: ListView.builder(
+                shrinkWrap: true,padding: EdgeInsets.only(left: 2.w,top: 2.w,right: 2.w),
+                itemCount: navigationList.length,
+                itemBuilder: (context, index) {
+                  return Navigation(
+                    context: context,img: navigationList[index].img,iconImg: navigationList[index].icon,title: navigationList[index].title,
+                    subtitle: navigationList[index].text,icon: Icons.favorite_border,likeNum: "84",conColor: navigationList[index].conColor,
+                  );
+                },),
+            ),
+          )
+              : selectIndex == 1 ? SafeArea(
+            child: Center(
+              child: Container(height:70.w,color: Color(0xffC0B298),
+                child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset('assets/images/img_menuImg1.png',fit: BoxFit.cover,colorBlendMode: BlendMode.darken,height: 60.w,width: double.infinity),
+                    Container(height: 10.w,
+                      child: Center(child: Text('This is another screen!',style: TextStyle(color: Theme.of(context).bottomAppBarColor),)),),
+                  ],
+                ),
+              ),
+            ),
+          )  : selectIndex == 2 ? SafeArea(
+            child: Center(
+              child: Container(height:70.w,color: Color(0xffC0B298),
+                child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset('assets/images/img_menuImg1.png',fit: BoxFit.cover,colorBlendMode: BlendMode.darken,height: 60.w,width: double.infinity),
+                    Container(height: 10.w,
+                      child: Center(child: Text('This is another screen!',style: TextStyle(color: Theme.of(context).bottomAppBarColor),)),),
+                  ],
+                ),
+              ),
+            ),
+          )
+              : selectIndex  == 3 ? SafeArea(
+            child: Center(
+              child: Container(height:70.w,color: Color(0xffC0B298),
+                child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset('assets/images/img_menuImg1.png',fit: BoxFit.cover,colorBlendMode: BlendMode.darken,height: 60.w,width: double.infinity),
+                    Container(height: 10.w,
+                      child: Center(child: Text('This is another screen!',style: TextStyle(color: Theme.of(context).bottomAppBarColor),)),),
+                  ],
+                ),
+              ),
+            ),
+          )
+              : SafeArea(
+            child: Container(
+              child: ListView.builder(
+                shrinkWrap: true,padding: EdgeInsets.only(left: 2.w,top: 2.w,right: 2.w),
+                itemCount: navigationList.length,
+                itemBuilder: (context, index) {
+                  return Navigation(
+                    context: context,img: navigationList[index].img,iconImg: navigationList[index].icon,title: navigationList[index].title,
+                    subtitle: navigationList[index].text,icon: Icons.favorite_border,likeNum: "84",conColor: navigationList[index].conColor,
+                  );
+                },),
+            ),
+          )
       ),
     );
   }
@@ -203,30 +203,30 @@ class _CustomNavigationDrawerPageState extends State<CustomNavigationDrawerPage>
             colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.darken)),
       ),
       child: Padding(padding:EdgeInsets.only(top: 50.w,left: 2.w),
-        child: Column(
-          children: [
-            ListTile(
-              selected: selectIndex == 0,
-              title: Text('THE PADDOCK"',style: TextStyle(fontSize: 20),),
-              onTap: () => onDrawerItemTap(0),
-            ),
-            ListTile(
-              selected: selectIndex == 1,
-              title: Text('HE HERO',style: TextStyle(fontSize: 20),),
-              onTap: () => onDrawerItemTap(1),
-            ),
-            ListTile(
-              selected: selectIndex == 2,
-              title: Text('THELP US GROW',style: TextStyle(fontSize: 20),),
-              onTap: () => onDrawerItemTap(2),
-            ),
-            ListTile(
-              selected:  selectIndex == 3,
-              title: Text('SETTINGS',style: TextStyle(fontSize: 20),),
-              onTap: () => onDrawerItemTap(3),
-            ),
-          ],
-        )
+          child: Column(
+            children: [
+              ListTile(
+                selected: selectIndex == 0,
+                title: Text('THE PADDOCK"',style: TextStyle(fontSize: 20),),
+                onTap: () => onDrawerItemTap(0),
+              ),
+              ListTile(
+                selected: selectIndex == 1,
+                title: Text('HE HERO',style: TextStyle(fontSize: 20),),
+                onTap: () => onDrawerItemTap(1),
+              ),
+              ListTile(
+                selected: selectIndex == 2,
+                title: Text('THELP US GROW',style: TextStyle(fontSize: 20),),
+                onTap: () => onDrawerItemTap(2),
+              ),
+              ListTile(
+                selected:  selectIndex == 3,
+                title: Text('SETTINGS',style: TextStyle(fontSize: 20),),
+                onTap: () => onDrawerItemTap(3),
+              ),
+            ],
+          )
       ),
     );
   }

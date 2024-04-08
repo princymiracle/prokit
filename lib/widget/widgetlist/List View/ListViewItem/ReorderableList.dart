@@ -50,7 +50,7 @@ class ReorderableListPage extends StatelessWidget {
                       boxShadow: [BoxShadow(color: Theme.of(context).hoverColor,blurRadius: 3.0,blurStyle: BlurStyle.outer)],
                   ),
                   child: ListTile(
-                    leading: Image.asset(reorderList[index].img,fit: BoxFit.cover,height: 5.w,),
+                    leading: Image.asset(reorderList[index].img,fit: BoxFit.cover,height: 5.w,color: Color(0xffC0B298),),
                     title:Text( reorderList[index].title),
                   ),
                 ),

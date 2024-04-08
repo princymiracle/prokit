@@ -70,7 +70,7 @@ class _SideMenuPageState extends State<SideMenuPage> {
                     ),
                     SizedBox(width: 4.w,),
                     Container(
-                      height: 9.h,
+                      height: 12.h,
                       width: 70.w,
                       decoration: BoxDecoration(
                         color: Colors.grey.withOpacity(0.1),

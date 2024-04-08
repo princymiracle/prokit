@@ -41,7 +41,7 @@ import 'widgetlist/SafeAreaWidget/SafeAreaWidgetListPage.dart';
 import 'widgetlist/ScaleTransition/ScaleTransitionWidget.dart';
 import 'widgetlist/Search Bar/SearchBarPage.dart';
 import 'widgetlist/Search Stepper/StepperListPage.dart';
-import 'widgetlist/Side Menu/SideMenuPage.dart';
+import 'widgetlist/Side Menu/SideMenuListPage.dart';
 import 'widgetlist/SideTransitionPage/SideTransitionPage.dart';
 import 'widgetlist/SizeTransition/SizeTransitionPage.dart';
 import 'widgetlist/Sliver Appbar/SliverAppbarListPage.dart';
@@ -103,14 +103,14 @@ List<Widgetdata> widgetdata = [
   Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_searchbar.png", title: "SearchBar Widget", subtitle: "This is widget searchbar\ninside your app",),
   Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_countrycode.png", title: "CountryCode Picker Widget", subtitle: "A flutter package to select a\ncountry from a list of countries.",),
   Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_gridview.png", title: "GridView Widget ", subtitle: "Used to create layout with grid",),
-  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_chip.png", title: "Chip Widget", subtitle: "A Widget compact elements that\nrepresent an attribute,text,entity,action",),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_chip.png", title: "Chip Widget", subtitle: "A Widget compact elements that\nrepresent an attribute,text,action",),
   Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_colorcode.png", title: "ColorCode Picker Widget", subtitle: "A Widget  a customizable color\npicker for Flutter",),
   Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_splashscreen.png", title: "Splash Screen", subtitle: "A Widget is the first screen that\nwe see when we run our application.",),
   Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_sidemenu.png", title: "Side Menu", subtitle: "The navigation drawer is added\nusing the Drawer widget.",),
   Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_animatedtext.png", title: "Animated Text", subtitle: "Text animation is the process\nof animating text on a computer",),
   Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_list.png", title: "ListView Widget ", subtitle: "ListView is the most commonly\nused scrolling widget.",),
   Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_silveraapp.png", title: "SilverApp Bar Widget", subtitle: " SliverAppBar to add a\nfloating app bar",),
-  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_stepper.png", title: "Stepper  Widget", subtitle: " stepper widget that displays\nprogress through a sequence of steps",),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_stepper.png", title: "Stepper  Widget", subtitle: "stepper widget that displays\nprogress through a sequence steps",),
   Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_bottommenu.png", title: "Bottom Menu ", subtitle: "A Widget bars allow movement\nbetween primary destinations"),
 ];
 

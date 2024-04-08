@@ -53,7 +53,7 @@ class _SafeAreaWidgetListPageState extends State<SafeAreaWidgetListPage> {
                       child: Row(
                         children: [
                           Container(
-                            height: 10.h,
+                            height: 9.h,
                             width: 17.w,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.all(Radius.circular(6)),
@@ -65,7 +65,7 @@ class _SafeAreaWidgetListPageState extends State<SafeAreaWidgetListPage> {
                           ),
                           SizedBox(width: 5.w,),
                           Container(
-                            height: 11.h,
+                            height: 9.h,
                             width: 70.w,
                             decoration: BoxDecoration(
                               color: Colors.grey.withOpacity(0.1),

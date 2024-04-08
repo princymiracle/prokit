@@ -57,7 +57,7 @@ class _SimpleNavigationDrawerPageState extends State<SimpleNavigationDrawerPage>
           child: Stack(
             children: [
               SizedBox(width: double.infinity,
-                child: DrawerHeader(decoration: BoxDecoration(color: Theme.of(context).secondaryHeaderColor,),
+                child: DrawerHeader(decoration: BoxDecoration(color: Color(0xff9888A5),),
                         child:Container(
                           child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -65,8 +65,8 @@ class _SimpleNavigationDrawerPageState extends State<SimpleNavigationDrawerPage>
                                   child: ClipOval(
                                       child: Image.asset('assets/images/img_cat1.png',fit: BoxFit.cover,height: 35.w,))),
                               SizedBox(height: 2.w,),
-                              Text("Header", style: TextStyle(color: Theme.of(context).primaryColorDark,fontWeight: FontWeight.w600),),
-                              Text("Header detail", style: TextStyle(color: Theme.of(context).primaryColorDark,fontWeight: FontWeight.w600),),
+                              Text("Header", style: TextStyle(color: Colors.white,fontWeight: FontWeight.w600),),
+                              Text("Header detail", style: TextStyle(color: Colors.white,fontWeight: FontWeight.w600),),
                             ],
                           ),
                         ),
@@ -77,25 +77,25 @@ class _SimpleNavigationDrawerPageState extends State<SimpleNavigationDrawerPage>
                   children: [
                     ListTile(
                       selected: selectIndex == 0,
-                      leading: Icon(Icons.home,color: Theme.of(context).secondaryHeaderColor,),
+                      leading: Icon(Icons.home,color: Color(0xff9888A5),),
                       title: Text('Home',style: TextStyle(fontSize: 20),),
                       onTap: () => onDrawerItemTap(0),
                     ),
                     ListTile(
                       selected: selectIndex == 1,
-                      leading: Icon(Icons.favorite,color: Theme.of(context).secondaryHeaderColor,),
+                      leading: Icon(Icons.favorite,color: Color(0xff9888A5),),
                       title: Text('Favorite',style: TextStyle(fontSize: 20),),
                       onTap: () => onDrawerItemTap(1),
                     ),
                     ListTile(
                       selected: selectIndex == 2,
-                      leading: Icon(Icons.music_note,color: Theme.of(context).secondaryHeaderColor,),
+                      leading: Icon(Icons.music_note,color: Color(0xff9888A5),),
                       title: Text('Music',style: TextStyle(fontSize: 20),),
                       onTap: () => onDrawerItemTap(2),
                     ),
                     ListTile(
                       selected:  selectIndex == 3,
-                      leading: Icon(Icons.videocam,color: Theme.of(context).secondaryHeaderColor,),
+                      leading: Icon(Icons.videocam,color: Color(0xff9888A5),),
                       title: Text('Video',style: TextStyle(fontSize: 20),),
                       onTap: () => onDrawerItemTap(3),
                     ),

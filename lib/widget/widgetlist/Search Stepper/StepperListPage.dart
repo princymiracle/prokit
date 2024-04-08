@@ -67,7 +67,7 @@ class _StepperListPageState extends State<StepperListPage> {
                           ),
                           SizedBox(width: 5.w,),
                           Container(
-                            height: 12.h,
+                            height: 9.h,
                             width: 70.w,
                             decoration: BoxDecoration(
                               color: Colors.grey.withOpacity(0.1),
@@ -81,7 +81,7 @@ class _StepperListPageState extends State<StepperListPage> {
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text(widgetdata[index].title.toString(),style: TextStyle(fontSize: 12.sp),),
+                                      Text(widgetdata[index].title.toString(),style: TextStyle(fontSize: 14.sp),),
                                     ],
                                   ),
                                   CircleAvatar(

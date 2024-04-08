@@ -1,8 +1,7 @@
 
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-
 import '../SplashScreenPage.dart';
 
 class AnimatedSplashScreenPage extends StatelessWidget {
@@ -19,7 +18,7 @@ class AnimatedSplashScreenPage extends StatelessWidget {
         ],
       ),
       splashIconSize: 60.w,
-      backgroundColor: const Color(0xffF59526),
+      backgroundColor:Color(0xffC0B298),
       splashTransition: SplashTransition.scaleTransition,
       nextScreen: SplashScreenPage(), centered: true,
       animationDuration: const Duration(seconds: 3),

@@ -33,7 +33,7 @@ class _CustomStepperPageState extends State<CustomStepperPage> {
             children: [
               Center(
                 child: Container(height: 35.w, width: 100.w,
-                  decoration: BoxDecoration(color: Color(0xffFFEBD4),borderRadius: BorderRadius.circular(5.w),),
+                  decoration: BoxDecoration(color: Color(0xffC0B298).withOpacity(0.5),borderRadius: BorderRadius.circular(5.w),),
                   child: Center(
                     child: EasyStepper(
                       activeStep: activeStep,

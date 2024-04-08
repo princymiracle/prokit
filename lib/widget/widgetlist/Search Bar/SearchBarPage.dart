@@ -1,9 +1,9 @@
-import 'package:devkitflutteruikit/widget/widgetlist/Search%20Bar/SearchBarItem/SimpleSearchBar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
 import 'SearchBarItem/MaterialSearchBarPage.dart';
+import 'SearchBarItem/SimpleSearchBar.dart';
 import 'SearchBarItem/ToolbarSearchBar.dart';
 
 
@@ -34,7 +34,7 @@ class _SearchBarPageState extends State<SearchBarPage> {
             icon: Icon(Icons.arrow_back,size: 4.h,),
 
           ),
-          title: Text("App Bar",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
+          title: Text("Search Bar",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
           actions: [
           ],
         ),
