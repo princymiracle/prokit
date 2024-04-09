@@ -18,7 +18,7 @@ class _AnimatedContainerPage2State extends State<AnimatedContainerPage2> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
+          onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Colors.white,size: 3.5,),),
         title: Text("Animated Container 2",style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
         backgroundColor: Color(0xffC0B298),
       ),

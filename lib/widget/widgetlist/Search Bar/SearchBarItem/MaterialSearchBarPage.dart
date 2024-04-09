@@ -47,7 +47,7 @@ class _MaterialSearchBarPageState extends State<MaterialSearchBarPage> {
           controller: controller,
           appBar: AppBar(
             backgroundColor: Color(0xffC0B298),
-            leading: Icon(Icons.menu,color: Theme.of(context).primaryColorDark,size: 25,),
+            leading: Icon(Icons.menu,color: Colors.white,size: 3.h,),
             title: Text(widget.title,style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.w600),),
             actions: [IconButton(onPressed: () {controller.toggleSearchBar();setState(() {searchLists = !searchLists;});}, icon: actionIcon),],
           ),

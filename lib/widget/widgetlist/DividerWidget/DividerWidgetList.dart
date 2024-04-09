@@ -30,7 +30,7 @@ class _DividerWidgetListState extends State<DividerWidgetList> {
         appBar: AppBar(
           leading: IconButton(
             onPressed: () => Get.back(),
-            icon: Icon(Icons.arrow_back,size: 5.h,),
+            icon: Icon(Icons.arrow_back,size: 3.h,),
 
           ),
           title: Text("Divider Widget",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),

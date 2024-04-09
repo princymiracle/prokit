@@ -26,7 +26,7 @@ class _ColorPickerPageState extends State<ColorPickerPage> {
     return  Scaffold(
       appBar: AppBar(centerTitle: true,
         leading: IconButton(
-          onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
+          onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Colors.white,size: 3.h,),),
         title: Text(widget.title,style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
         backgroundColor:  Color(0xffC0B298),
       ),

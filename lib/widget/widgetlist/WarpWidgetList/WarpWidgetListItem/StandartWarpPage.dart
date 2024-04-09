@@ -17,7 +17,7 @@ class _StandartWarpPageState extends State<StandartWarpPage> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () => Get.back(),
-          icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
+          icon: Icon(Icons.arrow_back,color: Colors.white,size: 3.h,),),
         title: Text("Standart Wrap",style: TextStyle(color: Colors.white ,fontSize: 21,fontWeight: FontWeight.w600),),
         backgroundColor: Color(0xff9888A5),
       ),

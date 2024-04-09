@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-
-
-import '../AnimatedPositionedPage.dart';
 import 'AnimatedCrossFade/AnimatedCrossFadeListPage.dart';
 import 'AnimatedList.dart';
 import 'AnimatedOpacity.dart';
 import 'AnimatedPhysicalModel.dart';
+import 'AnimatedPositioned.dart';
 import 'AnimatedSize.dart';
 import 'AnimatedWidget.dart';
 import 'AnimateddeFaultTextstyle.dart';

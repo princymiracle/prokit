@@ -59,8 +59,8 @@ class _TextFieldsListPageState extends State<TextFieldsListPage> {
                       child: Row(
                         children: [
                           Container(
-                            height: 10.h,
-                            width: 17.w,
+                            height: 9.h,
+                            width: 18.w,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.all(Radius.circular(6)),
                               color: widgetdata[index].color1,
@@ -69,29 +69,33 @@ class _TextFieldsListPageState extends State<TextFieldsListPage> {
                               ),
                             ),
                           ),
-                          SizedBox(width: 5.w,),
+                          SizedBox(width: 4.w,),
                           Container(
-                            height: 11.h,
+                            height: 10.h,
                             width: 70.w,
                             decoration: BoxDecoration(
                               color: Colors.grey.withOpacity(0.1),
                               borderRadius: BorderRadius.all(Radius.circular(10),),
                             ),
                             child: Padding(
-                              padding:  EdgeInsets.only(left: 3.w,right: 2.w,top: 1.h,),
+                              padding:  EdgeInsets.only(left: 2.w,right: 2.w,top: 1.h,),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text(widgetdata[index].title.toString(),style: TextStyle(fontSize: 14.sp),),
+                                      Text(widgetdata[index].title.toString(),style: TextStyle(fontSize: 15.sp),),
                                     ],
                                   ),
-                                  CircleAvatar(
-                                    radius: 15,
-                                    backgroundColor:  widgetdata[index].color1,
-                                    child: Icon(Icons.arrow_forward_ios,color: Colors.white,),
+                                  Padding(
+                                    padding:  EdgeInsets.only(bottom: 2.h),
+                                    child: CircleAvatar(
+
+                                      radius: 15,
+                                      backgroundColor:  widgetdata[index].color1,
+                                      child: Icon(Icons.arrow_forward_ios,color: Colors.white,),
+                                    ),
                                   )
                                 ],
                               ),

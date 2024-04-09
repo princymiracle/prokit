@@ -61,13 +61,13 @@ class WidgetPage extends StatefulWidget {
 }
 
 List<Widgetdata> widgetdata = [
-  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_appbar.png", title: "App Bar", subtitle: "A material Design app bar",),
-  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_container.png", title: "Continer Widget", subtitle: "One of the main widget in Flutter",),
-  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_Flexible.png", title: "Flexible Widget", subtitle: "Used to divider with flex value",),
-  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_expanded.png", title: "Expanded  Widget", subtitle: "Used to fie the rest of screen",),
-  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_button.png", title: "Button Widget", subtitle: "A material Design all types button ",),
-  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_divider.png", title: "Divider Widget", subtitle: "Usually used for menu",),
-  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_card.png", title: "Card Widget", subtitle: "One of the main widget in flutter",),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_appbar.png", title: "App Bar", subtitle: "The Widget as a header widget on\neach screen or view of the app",),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_container.png", title: "Container Widget", subtitle: " A Container is a versatile widget\nthat's like a multi-purpose box.",),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_Flexible.png", title: "Flexible Widget", subtitle: "A widget that controls how a child\nof a Row, Column, or Flex flexes. ",),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_expanded.png", title: "Expanded  Widget", subtitle: "The  widget will expand to all of the\nremaining height the parent widget",),
+  Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_button.png", title: "Button Widget", subtitle: "The button type used in this\nexample is called All Button.",),
+  Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_divider.png", title: "Divider Widget", subtitle: "This sample shows how to display\na Divider between inside a column.",),
+  Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_card.png", title: "Card Widget", subtitle: "This sample shows creation of a\nCard widget that can be tapped.",),
   Widgetdata(color1: Color(0xffC0B298), img: "assets/icons/icon_transfrom.png", title: "Transform Widget", subtitle: "Usually to transform widget\n in flutter",),
   Widgetdata(color1: Color(0xff9BBEC7), img: "assets/icons/icon_animated.png", title: "Side Transition", subtitle: "Animates the position of a\nwidget in flutter",),
   Widgetdata(color1: Color(0xff9888A5), img: "assets/icons/icon_animated.png", title: "Animated Container", subtitle: "Used to animate a container",),
@@ -120,23 +120,17 @@ class _WidgetPageState extends State<WidgetPage> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          leading: IconButton(
-            onPressed: () => Get.back(),
-            icon: Icon(Icons.arrow_back,size: 5.h,),
-
-          ),
           title: Text("Widgets",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
           actions: [
           Padding(
             padding:  EdgeInsets.only(right: 3.w),
             child: Icon(Icons.settings),
           ),
-          ],
+          ],centerTitle: true,
         ),
         body: Padding(
           padding: EdgeInsets.only(top: 2.h,right: 4.w,left: 4.w,bottom: 2.h),
           child: ListView.separated(
-
             shrinkWrap: true,
             itemCount: widgetdata.length,
             itemBuilder: (context, index) {

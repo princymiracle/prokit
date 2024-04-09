@@ -17,7 +17,7 @@ class _AppBarPage2State extends State<AppBarPage2> {
       appBar:AppBar(centerTitle: true,
         leading: IconButton(
           onPressed: () => Get.back(),
-          icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
+          icon: Icon(Icons.arrow_back,color: Colors.white,size: 3.h,),),
         title: Text("App Bar 2 - Image Title",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w600),),
         backgroundColor: Color(0xffC0B298),
       ),

@@ -18,7 +18,7 @@ class _ToolbarSearchBarPageState extends State<ToolbarSearchBarPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xff9BBEC7).withOpacity(0.6),
-        leading: Icon(Icons.menu,color: Theme.of(context).primaryColorDark,),
+        leading: Icon(Icons.menu,color: Colors.white,),
         title: appBarTitle,
         actions: <Widget>[
           IconButton(

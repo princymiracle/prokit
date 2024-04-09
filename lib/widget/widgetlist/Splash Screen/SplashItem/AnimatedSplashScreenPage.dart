@@ -14,7 +14,7 @@ class AnimatedSplashScreenPage extends StatelessWidget {
       splash: Column(
         children: [
           Image.asset('assets/images/img_dialogImg.png',fit: BoxFit.cover,height: 20.h,),SizedBox(height: 3.h,),
-          Text("Welcome",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 30,fontWeight: FontWeight.w600),)
+          Text("Welcome",style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.w600),)
         ],
       ),
       splashIconSize: 60.w,

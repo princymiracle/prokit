@@ -32,7 +32,6 @@ class _SearchBarPageState extends State<SearchBarPage> {
           leading: IconButton(
             onPressed: () => Get.back(),
             icon: Icon(Icons.arrow_back,size: 4.h,),
-
           ),
           title: Text("Search Bar",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
           actions: [

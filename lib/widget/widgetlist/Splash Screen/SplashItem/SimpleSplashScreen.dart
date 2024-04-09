@@ -30,7 +30,7 @@ class _SimpleSplashScreenPageState extends State<SimpleSplashScreenPage> {
             Container(
               child: Column(mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Welcome",style: TextStyle(color: Theme.of(context).secondaryHeaderColor,fontSize: 35,fontWeight: FontWeight.w600),),
+                  Text("Welcome",style: TextStyle(color: Color(0xff9888A5),fontSize: 35,fontWeight: FontWeight.w600),),
                   Image.asset('assets/images/img_dialogImg.png',fit: BoxFit.cover,height: 20.h,),
                 ],
               ),

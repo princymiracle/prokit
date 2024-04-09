@@ -38,7 +38,7 @@ class _ContainerWidgetListState extends State<ContainerWidgetList> {
         appBar: AppBar(
           leading: IconButton(
             onPressed: () => Get.back(),
-            icon: Icon(Icons.arrow_back,size: 4.h,),
+            icon: Icon(Icons.arrow_back,size: 3.h,),
 
           ),
           title: Text("Container Widget",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),

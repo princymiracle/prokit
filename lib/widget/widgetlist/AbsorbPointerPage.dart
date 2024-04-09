@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sizer/sizer.dart';
 
 class AbsorbPointerPage extends StatefulWidget {
   const AbsorbPointerPage({super.key});
@@ -17,7 +18,7 @@ class _AbsorbPointerPageState extends State<AbsorbPointerPage> {
     return Scaffold(
       appBar: AppBar(centerTitle: true,
         leading: IconButton(
-          onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark,size: 25,),),
+          onPressed: () => Get.back(),icon: Icon(Icons.arrow_back,color: Colors.white,size: 3.h,),),
         title: Text("Absorb Pointer",style: TextStyle(color: Colors.white ,fontSize: 21,fontWeight: FontWeight.w600),),
         backgroundColor: Color(0xff9BBEC7),
       ),

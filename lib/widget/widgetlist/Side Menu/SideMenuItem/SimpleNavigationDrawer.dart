@@ -48,7 +48,7 @@ class _SimpleNavigationDrawerPageState extends State<SimpleNavigationDrawerPage>
     return Scaffold(
       appBar:AppBar(centerTitle: true,
         title: Text(widget.title,style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.w600),),
-        iconTheme: IconThemeData(color: Theme.of(context).primaryColorDark,size: 25),
+        iconTheme: IconThemeData(color: Colors.white,size: 25),
         backgroundColor: Color(0xff9888A5),
       ),
 

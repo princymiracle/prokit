@@ -35,7 +35,6 @@ class _SnackBarListPageState extends State<SnackBarListPage> {
           leading: IconButton(
             onPressed: () => Get.back(),
             icon: Icon(Icons.arrow_back,size: 3.h,),
-
           ),
           title: Text("SnackBar Widgets",style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900),),
           centerTitle: true,
@@ -78,7 +77,7 @@ class _SnackBarListPageState extends State<SnackBarListPage> {
                           children: [
                             Container(
                               height: 9.h,
-                              width: 17.w,
+                              width: 18.w,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.all(Radius.circular(6)),
                                 color: widgetdata[index].color1,
@@ -87,7 +86,7 @@ class _SnackBarListPageState extends State<SnackBarListPage> {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 5.w,),
+                            SizedBox(width: 4.w,),
                             Container(
                               height: 9.h,
                               width: 70.w,
@@ -96,7 +95,7 @@ class _SnackBarListPageState extends State<SnackBarListPage> {
                                 borderRadius: BorderRadius.all(Radius.circular(10),),
                               ),
                               child: Padding(
-                                padding:  EdgeInsets.only(left: 2.w,right: 2.w,top: 1.h,),
+                                padding:  EdgeInsets.only(left: 2.w,right: 2.w,top: 2.5.h,),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
@@ -106,10 +105,14 @@ class _SnackBarListPageState extends State<SnackBarListPage> {
                                         Text(widgetdata[index].title.toString(),style: TextStyle(fontSize: 15.sp),),
                                       ],
                                     ),
-                                    CircleAvatar(
-                                      radius: 15,
-                                      backgroundColor:  widgetdata[index].color1,
-                                      child: Icon(Icons.arrow_forward_ios,color: Colors.white,),
+                                    Padding(
+                                      padding:  EdgeInsets.only(bottom: 2.h),
+                                      child: CircleAvatar(
+
+                                        radius: 15,
+                                        backgroundColor:  widgetdata[index].color1,
+                                        child: Icon(Icons.arrow_forward_ios,color: Colors.white,),
+                                      ),
                                     )
                                   ],
                                 ),

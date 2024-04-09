@@ -30,17 +30,14 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
         appBar: AppBar(
           leading: IconButton(
             onPressed: () => Get.back(),
-            icon: Icon(Icons.arrow_back,size: 4.h,),
-
+            icon: Icon(Icons.arrow_back,size: 3.h,),
           ),
           title: Text("Animated Container Widget",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
-          actions: [
-          ],
+          centerTitle: true,
         ),
         body: Padding(
           padding: EdgeInsets.only(top: 4.h,right: 4.w,left: 4.w,bottom: 2.h),
           child: ListView.separated(
-
             shrinkWrap: true,
             itemCount: widgetdata.length,
             itemBuilder: (context, index) {

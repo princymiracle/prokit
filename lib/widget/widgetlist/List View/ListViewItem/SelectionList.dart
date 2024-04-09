@@ -36,7 +36,7 @@ class _SelectionListState extends State<SelectionList> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () => Get.back(),
-          icon: Icon(Icons.arrow_back,size: 5.h,color: Colors.white),
+          icon: Icon(Icons.arrow_back,size: 3.h,color: Colors.white),
         ),
         title: Text(widget.title,style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w900,color: Colors.white),),
         backgroundColor: Color(0xff9888A5),
