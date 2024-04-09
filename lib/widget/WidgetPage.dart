@@ -121,12 +121,7 @@ class _WidgetPageState extends State<WidgetPage> {
       child: Scaffold(
         appBar: AppBar(
           title: Text("Widgets",style: TextStyle(fontSize: 17.sp,fontWeight: FontWeight.w900),),
-          actions: [
-          Padding(
-            padding:  EdgeInsets.only(right: 3.w),
-            child: Icon(Icons.settings),
-          ),
-          ],centerTitle: true,
+          centerTitle: true,
         ),
         body: Padding(
           padding: EdgeInsets.only(top: 2.h,right: 4.w,left: 4.w,bottom: 2.h),
